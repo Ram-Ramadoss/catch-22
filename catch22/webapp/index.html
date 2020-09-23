@@ -5,6 +5,11 @@
     <title>Catch-22</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script>
+      google.charts.load('current', {packages: ['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+    </script>
   </head>
 
   <body>  
@@ -50,7 +55,7 @@
     <div id="contacts-panel">
         <div id="contact">
          <h2>Raised</h2>
-            <p>X amount</p>
+         <div id="myBarChart"> </div>
         </div>
     </div>
 
