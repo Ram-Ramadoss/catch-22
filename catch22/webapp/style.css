@@ -10,23 +10,51 @@ html {
 
 
 a{
-    font-family: Courier New; 
     font-size: large;
 }
 
 img {
-  width: 100%;
+  height: 45vh;;
+}
+
+#logo {
+  height: 35vh;;
+}
+
+p,body,html,tr {
+  font-family: "Montserrat";
+  font-size: large;
+}
+
+h1,h2,h3,h4,h5,h6,h7 {
+  font-family: "Gugi";
+}
+
+h1 {
+  font-family: "Gugi";
+  font-size: xxx-large;
+}
+h2 {
+  font-family: "Gugi";
+  font-size: xx-large;
+}
+p,h1 {
+  margin: 0px;
+  padding: 0px;
+}
+h1.page-header {
+  margin: 0;
+  padding: 0;
 }
 
 #content {
   color: #ffffff;
   height: 75vh;
-  background-image: url('assets/road.jpg');
+  background-image: url('assets/car.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed; 
   padding: 50px;
-  font-family: Raleway; 
   animation-name: initAnim2;
   animation-duration: 3s;
   position: relative;
@@ -45,12 +73,11 @@ img {
 }
 
 #title{
-  font-size: x-large;
-  margin-top: 35vh;
-  margin-bottom: 30vh;
-  font-family: Courier New;
+  margin-top: 15vh;
   float: right;
   text-align: right;
+  color: white;
+  text-shadow: 2px 2px 5px black;
 }
 
 #greeting-container {
@@ -61,11 +88,6 @@ body{
   background-color: #000000;
 }
 
-p{
-    font-family: Courier New; 
-    font-size: large;
-    color: #000000;
-}
 
 hr{
  height: 1px;
