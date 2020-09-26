@@ -10,11 +10,13 @@
       google.charts.load('current', {packages: ['corechart']});
       google.charts.setOnLoadCallback(drawChart);
     </script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gugi">
   </head>
 
   <body>  
       <div id="mySidenav" class="topnav">
-        <a href="#about-panel">Home</a>
+        <a href="#about-panel">Intro</a>
         <a href="#projects-panel">Overview</a>
         <a href="#contacts-panel">Raised</a>
         <a href="#goals-panel">Donors</a>
@@ -24,32 +26,39 @@
 
     <div id="content">
         <div id="title">
-        <h1>California Proposition 22</h1>
+	<img src="assets/Prop22.png" alt="Prop 22" id="logo"></img>
+	<p><b>The App-Based Drivers as Contractors & Labor Policies Initiative</b></p>
+	<h2>Who supports & funds the two campaigns?</h2>
         </div>
     </div>
     
     <div id="about-panel">
         <div id="about">
-        <h2>Home</h2>
         <hr id="line-one"></hr>
-        <br>
-        <img src="images/profile.jpg" alt="Profile Image"></img>
-        <br>
-        <p>
-          Description
-        </p> 
-        <br> 
+	<div class="flex-container">
+		<div><img src="assets/yes.png" alt="Yes on Prop 22"></img></div>
+		<div><h1>What are the two campaigns?</h1></div>
+		<div><img src="assets/no.png" alt="No on Prop 22"></img></div>
+	</div>
+        <hr id="line-one"></hr>
         </div>
     </div>
 
     <div id="projects-panel">
         <div id="projects">
-        <h2>Overview</h2>
-         <ul>
-            <li>x</li>
-            <li>y </li>
-            <li>z</li>
-         </ul>
+	<div class="flex-container">
+	<div class="blurb">
+	<h1>Proposition 22</h1>
+	Establishes different criteria for determining whether app-based transportation (rideshare) and delivery drivers are “employees” or “independent contractors.”
+Independent contractors are not entitled to certain state-law protections afforded employees—including minimum wage, overtime, unemployment insurance, and workers’ compensation. Instead, companies with independent-contractor drivers will be required to provide specified alternative benefits, including: minimum compensation and healthcare subsidies based on engaged driving time, vehicle insurance, safety training, and sexual harassment policies. Restricts local regulation of app-based drivers; criminalizes impersonation of such drivers; requires background checks. Summary of estimate by Legislative Analyst and Director of Finance of fiscal impact on state and local governments: Increase in state personal income tax revenue of an unknown amount.
+	</div>
+	</div>
+	<div class="flex-container">
+		<div class="yes"><h2>Yes On Prop 22</h2>
+		<p>A <mark>"yes"</mark> vote supports this ballot initiative to define app-based transportation (rideshare) and delivery drivers as independent contractors and adopt labor and wage policies specific to app-based drivers and companies.</p><br/></div>
+		<div class="no"><h2>No On Prop 22</h2>
+		<p>A <mark>"no"</mark> vote opposes this ballot initiative, meaning California Assembly Bill 5 (2019) could be used to decide whether app-based drivers are employees or independent contractors.</p><br/></div>
+	</div>
         </div>
     </div>
     <div id="contacts-panel">
