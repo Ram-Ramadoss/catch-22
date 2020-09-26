@@ -10,11 +10,11 @@ html {
 
 
 a{
-    font-size: large;
+  font-size: large;
 }
 
 img {
-  height: 45vh;;
+  height: 35vh;;
 }
 
 #logo {
@@ -23,7 +23,7 @@ img {
 
 p,body,html,tr {
   font-family: "Montserrat";
-  font-size: large;
+  font-size: x-large;
 }
 
 h1,h2,h3,h4,h5,h6,h7 {
@@ -45,6 +45,38 @@ p,h1 {
 h1.page-header {
   margin: 0;
   padding: 0;
+}
+
+.flex-container {
+  display: flex;
+  width: 100%;
+}
+
+.flex-container > div {
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid black;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+
+.blurb {
+  background-color: #B4E1FF;
+  color: black;
+  font-size: small;
+  font-family: "Montserrat";
+}
+
+.no {
+  background-color: #F7B1AB;
+  color: #89043D;
+}
+
+.yes {
+  background-color: #c5e6a6;
+  color: #56a3a6;
 }
 
 #content {
@@ -73,7 +105,7 @@ h1.page-header {
 }
 
 #title{
-  margin-top: 15vh;
+  margin-top: 20vh;
   float: right;
   text-align: right;
   color: white;
@@ -95,7 +127,6 @@ hr{
 }
 
 li{
-   font-family: Courier New; 
    color: #ffffff;
    font-size: x-large; 
 }
@@ -164,7 +195,7 @@ li{
   display: flex;
   flex-wrap: wrap;
   height: 100vh;
-  background-image: url('https://i.pinimg.com/originals/c6/20/ca/c620caef7766c43a20b3ab81b2ebcbc0.png');
+  background-color: #9ba2ff;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
