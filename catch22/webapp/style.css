@@ -85,11 +85,11 @@ h3.page-header {
 #content {
   color: #ffffff;
   height: 75vh;
-  background-color: #FEF7DBff;
   background-image: url('assets/car.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed; 
+  background-color: #FEF7DBff;
   padding: 50px;
   animation-name: initAnim2;
   animation-duration: 3s;
@@ -121,7 +121,7 @@ h3.page-header {
 }
 
 body{
-  background-color: #000000;
+  background-color: #FEF7DBff;
 }
 
 
@@ -191,7 +191,6 @@ li{
 }
 #about{
     color: #000000;
-    font-family: Courier New;
     font-size: x-large; 
 }
 
@@ -235,10 +234,10 @@ li{
     color: #000000;
 }
 
-#goals-panel{
+#yes-panel{
   display: flex;
   flex-wrap: wrap;
-  height: 75vh;
+  height: 100vh;
   background-image: url('https://i.pinimg.com/originals/c6/20/ca/c620caef7766c43a20b3ab81b2ebcbc0.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -250,10 +249,34 @@ li{
   position: relative;
 }
 
-#goals{
+#yep{
+  text-align: center;
   color: #ffffff;
   font-size: x-large;
-  font-family: Courier New;
+  background-color: #56a3a6;
+}
+
+#no-panel{
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  background-image: url('https://i.pinimg.com/originals/c6/20/ca/c620caef7766c43a20b3ab81b2ebcbc0.png');
+  background-color: #89043D;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 50px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  animation-name: initAnim;
+  animation-duration: 3s;
+  position: relative;
+}
+
+#nope{
+  text-align: center;
+  color: #ffffff;
+  font-size: x-large;
+  background-color: #89043D;
 }
 
 #comments-panel{

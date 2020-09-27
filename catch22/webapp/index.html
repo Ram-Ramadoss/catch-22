@@ -11,6 +11,7 @@
       google.charts.setOnLoadCallback(drawChart);
       google.charts.setOnLoadCallback(drawChart2);
       google.charts.setOnLoadCallback(drawChart3);
+      google.charts.setOnLoadCallback(drawTimeline);
     </script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gugi">
@@ -20,8 +21,9 @@
       <div id="mySidenav" class="topnav">
         <a href="#about-panel">Intro</a>
         <a href="#projects-panel">Overview</a>
-        <a href="#contacts-panel">Raised</a>
-        <a href="#goals-panel">Donors</a>
+        <a href="#contacts-panel">Snapshot</a>
+        <a href="#yes-panel">Yes</a>
+        <a href="#no-panel">No</a>
       </div>
             
     <div class="column">
@@ -71,14 +73,17 @@
         </div>
     </div>
 
-    <div id="goals-panel">
-       <div id="goals">
-        <h2>Donors</h2>
-        <ul>
-          <li>x</li>
-          <li>y </li>
-          <li>z</li>
-        </ul>
+    <div id="yes-panel">
+       <div id="yep">
+	<h2>Yes on Prop 22</h2> 
+	<div class="flex-container">
+        <div id="theTimeline"> </div>
+	</div>
+       </div>
+    </div>
+    <div id="no-panel">
+       <div id="nope">
+        <h2>No on Prop 22</h2>
        </div>
     </div>       
     </div>
