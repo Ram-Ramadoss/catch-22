@@ -1,78 +1,78 @@
 async function drawChart() { 
- 	 var data = new google.visualization.DataTable();
- 	 data.addColumn('string', 'Campaign');
- 	 data.addColumn('number', '# of Contributors');
- 	 data.addColumn({type:'string', role:'style'});
- 	 data.addRows([
- 	 	 ['YES',5,'#c5e6a6'],
- 	 	 ['NO ',54,'#F7B1AB']
- 	 ]);
- 	 var options = {title:'Number of Funders',
- 	 	 width:350,
-		 height:300,
-		 legend:'none',
-		 hAxis:{textStyle:{fontName: "Montserrat",fontSize:20}},
-		 vAxis:{textStyle:{fontName: "Montserrat",fontSize:20}},
-		 titleTextStyle: {fontName: "Gugi",fontSize:20},
-		 colors:['#c5e6a6','#F7B1AB'],
-		 pieHole: 0,
-		 pieSliceTextStyle: {fontName: "Montserrat",fontSize:15,color: 'white'}
+ 	var data = new google.visualization.DataTable();
+ 	data.addColumn('string', 'Campaign');
+ 	data.addColumn('number', '# of Contributors');
+ 	data.addColumn({type:'string', role:'style'});
+ 	data.addRows([
+ 		['YES',5,'#c5e6a6'],
+ 	 	['NO ',54,'#F7B1AB']
+ 	]);
+ 	var options = {title:'# Of Funding Sources',
+ 	 	width:350,
+		height:300,
+		legend:'none',
+		hAxis:{textStyle:{fontName: "Montserrat",fontSize:20}},
+		vAxis:{textStyle:{fontName: "Montserrat",fontSize:20}},
+		titleTextStyle: {fontName: "Gugi",fontSize:20},
+		colors:['#c5e6a6','#F7B1AB'],
+		pieHole: 0,
+		pieSliceTextStyle: {fontName: "Montserrat",fontSize:15,color: 'white'}
 		};
- 	 var chart = new google.visualization.PieChart(document.getElementById('theContributors'));
- 	 chart.draw(data, options);
- }
+ 	var chart = new google.visualization.PieChart(document.getElementById('theContributors'));
+ 	chart.draw(data, options);
+}
 
 async function drawChart2() { 
- 	 var data = new google.visualization.DataTable();
- 	 data.addColumn('string', 'Campaign');
- 	 data.addColumn('number', 'Funds raised');
- 	 data.addColumn({type:'string', role:'style'});
- 	 data.addRows([
- 	 	 ['YES',295793679.34,'#c5e6a6'],
- 	 	 ['NO ',12822032.69,'#F7B1AB']
- 	 ]);
- 	 var options = {title:'Total Contributions ($)',
-		 width:350,
-		 height:300,
-		 legend:'none',
-		 hAxis:{
-		 	textStyle:{fontName: "Montserrat",fontSize:20},format: 'short'},
-		 vAxis:{textStyle:{fontName: "Montserrat",fontSize:20}},
-		 titleTextStyle: {fontName: "Gugi",fontSize:20}
+ 	var data = new google.visualization.DataTable();
+ 	data.addColumn('string', 'Campaign');
+ 	data.addColumn('number', 'Funds raised');
+ 	data.addColumn({type:'string', role:'style'});
+ 	data.addRows([
+ 	 	['YES',295793679.34,'#c5e6a6'],
+ 	 	['NO ',12822032.69,'#F7B1AB']
+ 	]);
+ 	var options = {title:'Total Contributions ($)',
+		width:350,
+		height:300,
+		legend:'none',
+		hAxis:{
+			textStyle:{fontName: "Montserrat",fontSize:20},format: 'short'},
+		vAxis:{textStyle:{fontName: "Montserrat",fontSize:20}},
+		titleTextStyle: {fontName: "Gugi",fontSize:20}
 		};
- 	 var chart = new google.visualization.BarChart(document.getElementById('theMoney'));
- 	 chart.draw(data, options);
- }
+ 	var chart = new google.visualization.BarChart(document.getElementById('theMoney'));
+ 	chart.draw(data, options);
+}
 
 async function drawChart3() { 
- 	 var data = new google.visualization.DataTable();
- 	 data.addColumn('string', 'Campaign');
- 	 data.addColumn('number', '# of Endorsers');
- 	 data.addColumn({type:'string', role:'style'});
- 	 data.addRows([
- 	 	 ['YES',107,'#c5e6a6'],
- 	 	 ['NO ',212,'#F7B1AB']
- 	 ]);
- 	 var options = {title:'Number of Endorsers',
- 	 	 width:350,
-		 height:300,
-		 legend:'none',
-		 hAxis:{textStyle:{fontName: "Montserrat",fontSize:20}},
-		 vAxis:{textStyle:{fontName: "Montserrat",fontSize:20}},
-		 titleTextStyle: {fontName: "Gugi",fontSize:20},
-		 colors:['#c5e6a6','#F7B1AB'],
-		 pieHole: 0,
-		 pieSliceTextStyle: {fontName: "Montserrat",fontSize:15,color: 'white'}
+ 	var data = new google.visualization.DataTable();
+ 	data.addColumn('string', 'Campaign');
+ 	data.addColumn('number', '# of Endorsers');
+ 	data.addColumn({type:'string', role:'style'});
+ 	data.addRows([
+ 	 	['YES',107,'#c5e6a6'],
+ 	 	['NO ',212,'#F7B1AB']
+ 	]);
+ 	var options = {title:'Number of Endorsers',
+ 	 	width:350,
+		height:300,
+		legend:'none',
+		hAxis:{textStyle:{fontName: "Montserrat",fontSize:20}},
+		vAxis:{textStyle:{fontName: "Montserrat",fontSize:20}},
+		titleTextStyle: {fontName: "Gugi",fontSize:20},
+		colors:['#c5e6a6','#F7B1AB'],
+		pieHole: 0,
+		pieSliceTextStyle: {fontName: "Montserrat",fontSize:15,color: 'white'}
 		};
- 	 var chart = new google.visualization.PieChart(document.getElementById('theCoalition'));
- 	 chart.draw(data, options);
- }
+ 	var chart = new google.visualization.PieChart(document.getElementById('theCoalition'));
+ 	chart.draw(data, options);
+}
 
 async function drawYesTimeline() { 
- 	 var data = new google.visualization.DataTable();
- 	 data.addColumn('date', 'Date');
- 	 data.addColumn('number', 'Contribution amount');
- 	 data.addRows([
+ 	var data = new google.visualization.DataTable();
+ 	data.addColumn('date', 'Date');
+ 	data.addColumn('number', 'Contribution amount');
+ 	data.addRows([
  	 	 [new Date(2019,9,28),80000000.0], 
 [new Date(2019,9,29),20000000.0], 
 [new Date(2019,9,30),120000000.0], 
@@ -113,27 +113,26 @@ async function drawYesTimeline() {
 [new Date(2020,8,18),2924.91], 
 [new Date(2020,8,22),14780.77], 
 [new Date(2020,8,25),756000.0]
- 	 ]);
- 	 var options = {title:'Contributions over time',
- 	 	 width:750,
-		 height:300,
-		 legend:'none',
-		 hAxis:{textStyle:{fontName: "Montserrat",fontSize:20,color: "#FEF7DB"},gridlines: {color: "#FEF7DB"},minorGridlines: {color: "#c5e6a6"},baselineColor: '#c5e6a6'},
-		 vAxis:{textStyle:{fontName: "Montserrat",fontSize:20,color: "#FEF7DB"},gridlines: {color: "#FEF7DB"},minorGridlines: {color: "#c5e6a6"},baselineColor: '#c5e6a6',format: 'short',scaleType:'log'},
-		 titleTextStyle: {fontName: "Gugi",fontSize:20,color: "#c5e6a6"},
-		 lineWidth: 3,
-		 backgroundColor: 'none',
-		 colors: ['#FEF7DB']
+ 	]);
+ 	var options = {title:'Contributions over time',
+ 	 	width:750,
+		height:300,
+		legend:'none',
+		hAxis:{textStyle:{fontName: "Montserrat",fontSize:20,color: "#FEF7DB"},gridlines: {color: "#FEF7DB"},minorGridlines: {color: "#c5e6a6"},baselineColor: '#c5e6a6'},
+		vAxis:{textStyle:{fontName: "Montserrat",fontSize:20,color: "#FEF7DB"},gridlines: {color: "#FEF7DB"},minorGridlines: {color: "#c5e6a6"},baselineColor: '#c5e6a6',format: 'short',scaleType:'log'},
+		titleTextStyle: {fontName: "Gugi",fontSize:20,color: "#c5e6a6"},
+		lineWidth: 3,
+		backgroundColor: 'none',colors: ['#FEF7DB']
 		};
- 	 var chart = new google.visualization.LineChart(document.getElementById('theYesTimeline'));
- 	 chart.draw(data, options);
- }
+ 	var chart = new google.visualization.AreaChart(document.getElementById('theYesTimeline'));
+ 	chart.draw(data, options);
+}
 
 async function drawNoTimeline() { 
- 	 var data = new google.visualization.DataTable();
- 	 data.addColumn('date', 'Date');
- 	 data.addColumn('number', 'Contribution amount');
- 	 data.addRows([
+ 	var data = new google.visualization.DataTable();
+ 	data.addColumn('date', 'Date');
+ 	data.addColumn('number', 'Contribution amount');
+ 	data.addRows([
 [new Date(2020,1,3),100000.0], 
 [new Date(2020,1,14),12000.0], 
 [new Date(2020,1,18),20500.0], 
@@ -175,18 +174,18 @@ async function drawNoTimeline() {
 [new Date(2020,8,22),546000.0], 
 [new Date(2020,8,23),375000.0], 
 [new Date(2020,8,24),1000000.0]
- 	 ]);
- 	 var options = {title:'Contributions over time',
- 	 	 width:750,
-		 height:300,
-		 legend:'none',
-		 hAxis:{textStyle:{fontName: "Montserrat",fontSize:20,color: "#FEF7DB"},gridlines: {color: "#FEF7DB"},minorGridlines: {color: "#F7B1AB"},baselineColor: '#F7B1AB'},
-		 vAxis:{textStyle:{fontName: "Montserrat",fontSize:20,color: "#FEF7DB"},gridlines: {color: "#FEF7DB"},minorGridlines: {color: "#F7B1AB"},baselineColor: '#F7B1AB',format: 'short',scaleType:'none'},
-		 titleTextStyle: {fontName: "Gugi",fontSize:20,color: "#F7B1AB"},
-		 lineWidth: 3,
-		 backgroundColor: 'none',
-		 colors: ['#FEF7DB']
+ 	]);
+ 	var options = {title:'Contributions over time',
+ 	 	width:750,
+		height:300,
+		legend:'none',
+		hAxis:{textStyle:{fontName: "Montserrat",fontSize:20,color: "#FEF7DB"},gridlines: {color: "#FEF7DB"},minorGridlines: {color: "#F7B1AB"},baselineColor: '#F7B1AB'},
+		vAxis:{textStyle:{fontName: "Montserrat",fontSize:20,color: "#FEF7DB"},gridlines: {color: "#FEF7DB"},minorGridlines: {color: "#F7B1AB"},baselineColor: '#F7B1AB',format: 'short',scaleType:'none'},
+		titleTextStyle: {fontName: "Gugi",fontSize:20,color: "#F7B1AB"},
+		lineWidth: 3,
+		backgroundColor: 'none',
+		colors: ['#FEF7DB']
 		};
- 	 var chart = new google.visualization.LineChart(document.getElementById('theNoTimeline'));
- 	 chart.draw(data, options);
- }
+ 	var chart = new google.visualization.AreaChart(document.getElementById('theNoTimeline'));
+ 	chart.draw(data, options);
+}
