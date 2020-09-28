@@ -9,6 +9,9 @@
     <script>
       google.charts.load('current', {packages: ['corechart']});
       google.charts.setOnLoadCallback(drawChart);
+      google.charts.setOnLoadCallback(drawChart2);
+      google.charts.setOnLoadCallback(drawChart3);
+      google.charts.setOnLoadCallback(drawTimeline);
     </script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gugi">
@@ -18,8 +21,9 @@
       <div id="mySidenav" class="topnav">
         <a href="#about-panel">Intro</a>
         <a href="#projects-panel">Overview</a>
-        <a href="#contacts-panel">Raised</a>
-        <a href="#goals-panel">Donors</a>
+        <a href="#contacts-panel">Snapshot</a>
+        <a href="#yes-panel">Yes</a>
+        <a href="#no-panel">No</a>
       </div>
             
     <div class="column">
@@ -48,8 +52,7 @@
         <div id="projects">
 	<div class="flex-container">
 	<div class="blurb">
-	<h3>Establishes different criteria for determining whether app-based transportation (rideshare) and delivery drivers are “employees” or “independent contractors.” </h3>
-Independent contractors are not entitled to certain state-law protections afforded employees—including minimum wage, overtime, unemployment insurance, and workers’ compensation. Instead, companies with independent-contractor drivers will be required to provide specified alternative benefits, including: minimum compensation and healthcare subsidies based on engaged driving time, vehicle insurance, safety training, and sexual harassment policies. Restricts local regulation of app-based drivers; criminalizes impersonation of such drivers; requires background checks. Summary of estimate by Legislative Analyst and Director of Finance of fiscal impact on state and local governments: Increase in state personal income tax revenue of an unknown amount.
+	<h2>Prop 22 establishes different criteria for determining whether app-based transportation (rideshare) and delivery drivers are “employees” or “independent contractors.” </h2>
 	</div>
 	</div>
 	<div class="flex-container">
@@ -61,20 +64,26 @@ Independent contractors are not entitled to certain state-law protections afford
         </div>
     </div>
     <div id="contacts-panel">
-        <div id="contact">
-         <h2>Raised</h2>
-         <div id="myBarChart"> </div>
+        <div id="contact">Snapshot
+	 <div class="flex-container">
+         	<div><div id="theContributors"> </div>How many groups contributed money</div>
+	 	<div><div id="theMoney"> </div>How much money was raised</div>
+         	<div><div id="theCoalition"> </div>How many groups joined each coalition</div>
+	 </div>
         </div>
     </div>
 
-    <div id="goals-panel">
-       <div id="goals">
-        <h2>Donors</h2>
-        <ul>
-          <li>x</li>
-          <li>y </li>
-          <li>z</li>
-        </ul>
+    <div id="yes-panel">
+       <div id="yep">
+	<h2>Yes on Prop 22</h2> 
+	<div class="flex-container">
+        <div id="theTimeline"> </div>
+	</div>
+       </div>
+    </div>
+    <div id="no-panel">
+       <div id="nope">
+        <h2>No on Prop 22</h2>
        </div>
     </div>       
     </div>

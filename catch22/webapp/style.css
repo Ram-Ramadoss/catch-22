@@ -47,14 +47,19 @@ h1.page-header {
   padding: 0;
 }
 
+h3.page-header {
+  margin: 0;
+  padding: 0;
+}
+
 .flex-container {
   display: flex;
   width: 100%;
 }
 
 .flex-container > div {
-  margin: 10px;
-  padding: 10px;
+  margin: 5px;
+  padding: 5px;
   text-align: center;
   flex-basis: 100%;
   flex: 1;
@@ -62,7 +67,6 @@ h1.page-header {
 
 
 .blurb {
-  color: black;
   font-size: small;
   font-family: "Montserrat";
   color: #064789;
@@ -85,6 +89,7 @@ h1.page-header {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed; 
+  background-color: #FEF7DBff;
   padding: 50px;
   animation-name: initAnim2;
   animation-duration: 3s;
@@ -116,7 +121,7 @@ h1.page-header {
 }
 
 body{
-  background-color: #000000;
+  background-color: #FEF7DBff;
 }
 
 
@@ -133,7 +138,7 @@ li{
 .topnav {
   display: flex;
   overflow: hidden;
-  background-color: #333;
+  background-color: #FEF7DBff;
   animation-name: navBarAnim;
   animation-duration: 3s;
   position: relative;
@@ -141,7 +146,7 @@ li{
 
 .topnav a {
   float: left;
-  color: #f2f2f2;
+  color: #064789;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -149,8 +154,8 @@ li{
 }
 
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: #9BA2FFff;
+  color: white;
 }
 
 .topnav a.active {
@@ -186,7 +191,6 @@ li{
 }
 #about{
     color: #000000;
-    font-family: Courier New;
     font-size: x-large; 
 }
 
@@ -209,14 +213,13 @@ li{
   margin-left: 0vw;
   color: #ffffff;
   font-size: x-large;
-  font-family: Courier New;
 }
 
 #contacts-panel{
   font-size: x-large; 
   display: flex;
   flex-wrap: wrap;
-  height: 50vh;
+  height: 60vh;
   background-color: #ffffff;
   padding: 50px;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
@@ -227,15 +230,14 @@ li{
 
 #contact{
     margin: 0 auto;
-    margin-top: 10vh;
+    margin-top: 0vh;
     color: #000000;
-    font-family: Courier New;
 }
 
-#goals-panel{
+#yes-panel{
   display: flex;
   flex-wrap: wrap;
-  height: 75vh;
+  height: 100vh;
   background-image: url('https://i.pinimg.com/originals/c6/20/ca/c620caef7766c43a20b3ab81b2ebcbc0.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -247,10 +249,34 @@ li{
   position: relative;
 }
 
-#goals{
+#yep{
+  text-align: center;
   color: #ffffff;
   font-size: x-large;
-  font-family: Courier New;
+  background-color: #56a3a6;
+}
+
+#no-panel{
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  background-image: url('https://i.pinimg.com/originals/c6/20/ca/c620caef7766c43a20b3ab81b2ebcbc0.png');
+  background-color: #89043D;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 50px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  animation-name: initAnim;
+  animation-duration: 3s;
+  position: relative;
+}
+
+#nope{
+  text-align: center;
+  color: #ffffff;
+  font-size: x-large;
+  background-color: #89043D;
 }
 
 #comments-panel{
