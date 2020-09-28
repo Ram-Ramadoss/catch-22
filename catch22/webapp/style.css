@@ -33,6 +33,7 @@ h1,h2,h3,h4,h5,h6,h7 {
 h1 {
   font-family: "Gugi";
   font-size: xxx-large;
+  color:#064789;
 }
 h2 {
   font-family: "Gugi";
@@ -55,6 +56,7 @@ h3.page-header {
 .flex-container {
   display: flex;
   width: 100%;
+  align-items: stretch
 }
 
 .flex-container > div {
@@ -85,7 +87,7 @@ h3.page-header {
 #content {
   color: #ffffff;
   height: 75vh;
-  background-image: url('assets/car.jpg');
+  background-image: url('assets/car2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed; 
@@ -111,8 +113,8 @@ h3.page-header {
   margin-top: 20vh;
   float: right;
   text-align: right;
-  color: white;
-  text-shadow: 2px 2px 5px black;
+  color: #FEF7DB;
+  text-shadow: 2px 2px 5px #064789;
 }
 
 #greeting-container {
@@ -154,7 +156,7 @@ li{
 
 .topnav a:hover {
   background-color: #9BA2FFff;
-  color: white;
+  color: #FEF7DB;
 }
 
 .topnav a.active {
@@ -214,7 +216,7 @@ li{
   font-size: x-large;
 }
 
-#contacts-panel{
+#snapshot-panel{
   font-size: x-large; 
   display: flex;
   flex-wrap: wrap;
@@ -227,7 +229,7 @@ li{
   position: relative;
 }
 
-#contact{
+#snapshot{
     margin: 0 auto;
     margin-top: 0vh;
     color: #000000;
@@ -236,7 +238,7 @@ li{
 #yes-panel{
   display: flex;
   flex-wrap: wrap;
-  height: 100vh;
+  height: 85vh;
   background-image: url('https://i.pinimg.com/originals/c6/20/ca/c620caef7766c43a20b3ab81b2ebcbc0.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -250,7 +252,7 @@ li{
 
 #yep{
   text-align: center;
-  color: #ffffff;
+  color: #c5e6a6;
   font-size: x-large;
   background-color: #56a3a6;
 }
@@ -258,7 +260,7 @@ li{
 #no-panel{
   display: flex;
   flex-wrap: wrap;
-  height: 100vh;
+  height: 85vh;
   background-image: url('https://i.pinimg.com/originals/c6/20/ca/c620caef7766c43a20b3ab81b2ebcbc0.png');
   background-color: #89043D;
   background-repeat: no-repeat;
@@ -273,7 +275,7 @@ li{
 
 #nope{
   text-align: center;
-  color: #ffffff;
+  color: #F7B1AB;
   font-size: x-large;
   background-color: #89043D;
 }

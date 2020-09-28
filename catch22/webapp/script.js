@@ -118,10 +118,12 @@ async function drawTimeline() {
  	 	 width:750,
 		 height:300,
 		 legend:'none',
-		 hAxis:{textStyle:{fontName: "Montserrat",fontSize:20}},
-		 vAxis:{textStyle:{fontName: "Montserrat",fontSize:20},format: 'short',scaleType:'log'},
-		 titleTextStyle: {fontName: "Gugi",fontSize:20},
+		 hAxis:{textStyle:{fontName: "Montserrat",fontSize:20,color: "#FEF7DB"},gridlines: {color: "#c5e6a6"},baselineColor: '#c5e6a6'},
+		 vAxis:{textStyle:{fontName: "Montserrat",fontSize:20,color: "#FEF7DB"},gridlines: {color: "#c5e6a6"},baselineColor: '#c5e6a6',format: 'short',scaleType:'log'},
+		 titleTextStyle: {fontName: "Gugi",fontSize:20,color: "#c5e6a6"},
+		 lineWidth: 3,
 		 backgroundColor: 'none',
+		 colors: ['#FEF7DB']
 		};
  	 var chart = new google.visualization.LineChart(document.getElementById('theTimeline'));
  	 chart.draw(data, options);
