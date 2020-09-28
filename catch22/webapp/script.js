@@ -119,7 +119,7 @@ async function drawTimeline() {
 		 height:300,
 		 legend:'none',
 		 hAxis:{textStyle:{fontName: "Montserrat",fontSize:20}},
-		 vAxis:{textStyle:{fontName: "Montserrat",fontSize:20},format: 'short'},
+		 vAxis:{textStyle:{fontName: "Montserrat",fontSize:20},format: 'short',scaleType:'log'},
 		 titleTextStyle: {fontName: "Gugi",fontSize:20},
 		 backgroundColor: 'none',
 		};
