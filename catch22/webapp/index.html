@@ -11,7 +11,8 @@
       google.charts.setOnLoadCallback(drawChart);
       google.charts.setOnLoadCallback(drawChart2);
       google.charts.setOnLoadCallback(drawChart3);
-      google.charts.setOnLoadCallback(drawTimeline);
+      google.charts.setOnLoadCallback(drawYesTimeline);
+      google.charts.setOnLoadCallback(drawNoTimeline);
     </script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gugi">
@@ -21,7 +22,7 @@
       <div id="mySidenav" class="topnav">
         <a href="#about-panel">Intro</a>
         <a href="#projects-panel">Overview</a>
-        <a href="#contacts-panel">Snapshot</a>
+        <a href="#snapshot-panel">Snapshot</a>
         <a href="#yes-panel">Yes</a>
         <a href="#no-panel">No</a>
       </div>
@@ -30,7 +31,7 @@
 
     <div id="content">
         <div id="title">
-	<img src="assets/Prop22.png" alt="Prop 22" id="logo"></img>
+	<img src="assets/Prop22_2.png" alt="Prop 22" id="logo"></img>
 	<p><b>The App-Based Drivers as Contractors & Labor Policies Initiative</b></p>
 	<h2>Who supports & funds the two campaigns?</h2>
         </div>
@@ -63,12 +64,12 @@
 	</div>
         </div>
     </div>
-    <div id="contacts-panel">
-        <div id="contact">Snapshot
+    <div id="snapshot-panel">
+        <div id="snapshot">Snapshot
 	 <div class="flex-container">
-         	<div><div id="theContributors"> </div>How many groups contributed money</div>
-	 	<div><div id="theMoney"> </div>How much money was raised</div>
-         	<div><div id="theCoalition"> </div>How many groups joined each coalition</div>
+         	<div><div id="theContributors"> </div>How many groups funded each coalition</div>
+	 	<div><div id="theMoney"> </div>How much money <br/>was raised</div>
+         	<div><div id="theCoalition"> </div>How many groups support each coalition</div>
 	 </div>
         </div>
     </div>
@@ -77,13 +78,16 @@
        <div id="yep">
 	<h2>Yes on Prop 22</h2> 
 	<div class="flex-container">
-        <div id="theTimeline"> </div>
+        <div id="theYesTimeline"> </div>
 	</div>
        </div>
     </div>
     <div id="no-panel">
        <div id="nope">
         <h2>No on Prop 22</h2>
+	<div class="flex-container">
+        <div id="theNoTimeline"> </div>
+	</div>
        </div>
     </div>       
     </div>
