@@ -152,7 +152,7 @@ li{
 .topnav {
   display: flex;
   overflow: hidden;
-  background-color: #FEF7DBff;
+  background-color: #064789;
   animation-name: navBarAnim;
   animation-duration: 3s;
   position: relative;
@@ -160,7 +160,7 @@ li{
 
 .topnav a {
   float: left;
-  color: #064789;
+  color: #FEF7DB;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -168,8 +168,8 @@ li{
 }
 
 .topnav a:hover {
-  background-color: #064789;
-  color: #FEF7DB;
+  background-color: #FEF7DBff;
+  color: #064789;
 }
 
 .topnav a.active {
