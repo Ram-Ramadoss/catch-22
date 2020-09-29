@@ -81,6 +81,13 @@ h3.page-header {
   flex: 1;
 }
 
+#desc{
+  padding: 50px;
+  text-align: left;
+  float: left;
+  width:350px
+}
+
 .blurb {
   font-size: small;
   font-family: "Montserrat";

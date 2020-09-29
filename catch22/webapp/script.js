@@ -303,7 +303,7 @@ async function drawYesCoal() {
 		['NAACP',11,'8dc4a6']
  	]);
  	var options = {title:'Top 5 Most Frequent Coalition Terms',
-		width:1000,
+		width:650,
 		height:300,
 		legend:'none',
 		hAxis:{textStyle:{fontName: "Montserrat",fontSize:20,color: "#FEF7DB"},gridlines: {color: "#FEF7DB"},minorGridlines: {color: "#c5e6a6"},baselineColor: '#c5e6a6',format: 'short'},
@@ -331,7 +331,7 @@ async function drawNoCoal() {
 		['California',24,'c05a74'],
 	]);
  	var options = {title:'Top 5 Most Frequent Coalition Terms',
-		width:1000,
+		width:650,
 		height:300,
 		legend:'none',
 		hAxis:{textStyle:{fontName: "Montserrat",fontSize:17,color: "#FEF7DB"},gridlines: {color: "#FEF7DB"},minorGridlines: {color: "#c5e6a6"},baselineColor: '#F7B1AB',format: 'short'},
