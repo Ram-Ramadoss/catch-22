@@ -203,7 +203,7 @@ async function drawYesMoney() {
 		['POSTMATES',20638250.83,'c5e6a6']
  	]);
  	var options = {title:'Contributors & Donation Size ($)',
-		width:400,
+		width:450,
 		height:300,
 		legend:'none',
 		hAxis:{textStyle:{fontName: "Montserrat",fontSize:20,color: "#FEF7DB"},gridlines: {color: "#FEF7DB"},minorGridlines: {color: "#c5e6a6"},baselineColor: '#c5e6a6',format: 'short'},
@@ -276,7 +276,7 @@ async function drawNoMoney() {
 		['SAN MATEO COUNTY CENTRAL LABOR COUNCIL COMMITTEE ON POLITICAL EDUCATION',500.0],
 	]);
  	var options = {title:'Contributors & Donation Size ($)',
-		width:400,
+		width:450,
 		height:300,
 		legend:'none',
 		hAxis:{textStyle:{fontName: "Montserrat",fontSize:15,color: "#FEF7DB"},gridlines: {color: "#FEF7DB"},minorGridlines: {color: "#f7b1ab"},baselineColor: '#f7b1ab',format: 'short'},
