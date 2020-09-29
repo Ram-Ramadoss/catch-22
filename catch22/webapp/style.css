@@ -67,6 +67,19 @@ h3.page-header {
   flex: 1;
 }
 
+.flex-container2 {
+  display: flex;
+  width: 100%;
+  align-items: center
+}
+
+.flex-container2 > div {
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+  flex-basis: 100%;
+  flex: 1;
+}
 
 .blurb {
   font-size: small;
@@ -139,7 +152,7 @@ li{
 .topnav {
   display: flex;
   overflow: hidden;
-  background-color: #FEF7DBff;
+  background-color: #064789;
   animation-name: navBarAnim;
   animation-duration: 3s;
   position: relative;
@@ -147,7 +160,7 @@ li{
 
 .topnav a {
   float: left;
-  color: #064789;
+  color: #FEF7DB;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -155,8 +168,8 @@ li{
 }
 
 .topnav a:hover {
-  background-color: #9BA2FFff;
-  color: #FEF7DB;
+  background-color: #FEF7DBff;
+  color: #064789;
 }
 
 .topnav a.active {
@@ -180,7 +193,7 @@ li{
   100%  {right: 0vw;}
 }
 
-#about-panel{
+#intro-panel{
   display: flex;
   flex-wrap: wrap;
   background-color: #ffffff;
@@ -190,16 +203,18 @@ li{
   animation-duration: 3s;
   position: relative;
 }
-#about{
+#intro{
+    margin: 0 auto;
     color: #000000;
     font-size: x-large; 
 }
 
-#projects-panel{
+#overview-panel{
   display: flex;
   flex-wrap: wrap;
   height: 100vh;
-  background-color: #FEF7DBff;
+  background-color: #FEF7DB;
+  background-image: url('assets/mosaic.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -210,7 +225,7 @@ li{
   position: relative;
 }
 
-#projects{
+#overview{
   margin-left: 0vw;
   color: #ffffff;
   font-size: x-large;
@@ -251,6 +266,7 @@ li{
 }
 
 #yep{
+  margin: 0 auto;
   text-align: center;
   color: #c5e6a6;
   font-size: x-large;
@@ -274,6 +290,7 @@ li{
 }
 
 #nope{
+  margin: 0 auto;
   text-align: center;
   color: #F7B1AB;
   font-size: x-large;
