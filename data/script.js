@@ -13,10 +13,10 @@ async function drawChart() {
 		hAxis:{textStyle:{fontName: "Montserrat",fontSize:20}},
 		vAxis:{textStyle:{fontName: "Montserrat",fontSize:20}},
 		titleTextStyle: {fontName: "Gugi",fontSize:20},
-		colors:['#	c5e6a6','#F7B1AB'],
-		pieHole: 0	,
+		colors:['#c5e6a6','#F7B1AB'],
+		pieHole: 0,
 		pieSliceTextStyle: {fontName: "Montserrat",fontSize:15,color: 'white'}
 		};
-	var chart = new google.visualization.BarChart(document.getElementById('myBarChart'));
-	chart.draw(data, null);
+	var chart = new google.visualization.PieChart(document.getElementById('theContributors'));
+	chart.draw(data, options);
 }
