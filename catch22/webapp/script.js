@@ -115,11 +115,11 @@ async function drawYesTimeline() {
 [new Date(2020,8,25),756000.0]
  	]);
  	var options = {title:'Contributions over time',
- 	 	width:750,
+ 	 	width:650,
 		height:300,
 		legend:'none',
 		hAxis:{textStyle:{fontName: "Montserrat",fontSize:20,color: "#FEF7DB"},gridlines: {color: "#FEF7DB"},minorGridlines: {color: "#c5e6a6"},baselineColor: '#c5e6a6'},
-		vAxis:{textStyle:{fontName: "Montserrat",fontSize:20,color: "#FEF7DB"},gridlines: {color: "#FEF7DB"},minorGridlines: {color: "#c5e6a6"},baselineColor: '#c5e6a6',format: 'short',scaleType:'log'},
+		vAxis:{textStyle:{fontName: "Montserrat",fontSize:20,color: "#FEF7DB"},gridlines: {color: "#FEF7DB"},minorGridlines: {color: "#c5e6a6"},baselineColor: '#c5e6a6',format: 'short',scaleType:'mirrorLog'},
 		titleTextStyle: {fontName: "Gugi",fontSize:20,color: "#c5e6a6"},
 		lineWidth: 3,
 		backgroundColor: 'none',colors: ['#FEF7DB']
@@ -176,7 +176,7 @@ async function drawNoTimeline() {
 [new Date(2020,8,24),1000000.0]
  	]);
  	var options = {title:'Contributions over time',
- 	 	width:750,
+ 	 	width:650,
 		height:300,
 		legend:'none',
 		hAxis:{textStyle:{fontName: "Montserrat",fontSize:20,color: "#FEF7DB"},gridlines: {color: "#FEF7DB"},minorGridlines: {color: "#F7B1AB"},baselineColor: '#F7B1AB'},
@@ -187,5 +187,138 @@ async function drawNoTimeline() {
 		colors: ['#FEF7DB']
 		};
  	var chart = new google.visualization.AreaChart(document.getElementById('theNoTimeline'));
+ 	chart.draw(data, options);
+}
+
+async function drawYesMoney() { 
+ 	var data = new google.visualization.DataTable();
+ 	data.addColumn('string', 'Contributor');
+ 	data.addColumn('number', '$ contributed');
+ 	data.addColumn({type:'string', role:'style'});
+ 	data.addRows([
+		['UBER',81102105.9,'FEF7DB'],
+		['LYFT',78784887.67,'eff2cd'],
+		['DOORDASH',77669558.06,'e1eec0'],
+		['INSTACART',37598876.879999995,'d3eab3'],
+		['POSTMATES',20638250.83,'c5e6a6']
+ 	]);
+ 	var options = {title:'Contributors',
+		width:500,
+		height:300,
+		legend:'none',
+		hAxis:{textStyle:{fontName: "Montserrat",fontSize:20,color: "#FEF7DB"},gridlines: {color: "#FEF7DB"},minorGridlines: {color: "#c5e6a6"},baselineColor: '#c5e6a6',format: 'short'},
+		vAxis:{textStyle:{fontName: "Montserrat",fontSize:12,color: "#FEF7DB"},gridlines: {color: "#FEF7DB"},minorGridlines: {color: "#c5e6a6"},baselineColor: '#c5e6a6'},
+		titleTextStyle: {fontName: "Gugi",fontSize:20,color: "#c5e6a6"},
+		backgroundColor: 'none',
+		};
+ 	var chart = new google.visualization.BarChart(document.getElementById('theYesMoney'));
+ 	chart.draw(data, options);
+}
+
+async function drawNoMoney() { 
+ 	var data = new google.visualization.DataTable();
+ 	data.addColumn('string', 'Contributor');
+ 	data.addColumn('number', '$ contributed');
+	data.addRows([
+		['INTERNATIONAL BROTHERHOOD OF TEAMSTERS',1500000.0],
+		['SERVICE EMPLOYEES INTERNATIONAL UNION',1100000.0],
+		['SERVICE EMPLOYEES INTERNATIONAL UNION UNITED HEALTH CARE WORKERS WEST POLITICAL ISSUES COMMITTEE',1000000.0],
+		['UNITED FOOD AND COMMERCIAL WORKERS INTERNATIONAL UNION CLC',1000000.0],
+		['TRANSPORT WORKERS UNION OF AMERICA',1000000.0],
+		['UNITED FOOD & COMMERCIAL WORKERS LOCAL 770',1000000.0],
+		['UNITED FOOD AND COMMERCIAL WORKERS WESTERN STATES ISSUES PAC',750000.0],
+		['MEMBERS VOICE OF THE STATE BUILDING AND CONSTRUCTION TRADES COUNCIL OF CALIFORNIA',500000.0],
+		['UNITED FOOD & COMMERCIAL WORKERS UNION LOCAL 135',500000.0],
+		['TEAMSTERS JOINT EXECUTIVE COUNCIL NO. 7',478935.0],
+		['SEIU CALIFORNIA STATE COUNCIL ISSUES COMMITTEE',441700.0],
+		['WORKING FAMILIES ISSUES COMMITTEE, SPONSORED BY THE CALIFORNIA LABOR FEDERATION, AFL-CIO',437500.0],
+		['SERVICE EMPLOYEES INTERNATIONAL UNION LOCAL 721 CTW, CLC ISSUES & INITIATIVES',400000.0],
+		['UNITE HERE!',375000.0],
+		['OPERATING ENGINEERS LOCAL UNION NO. 3 ISSUES ADVOCACY/BALLOT INITIATIVE PAC',250000.0],
+		['CALIFORNIA FEDERATION OF TEACHERS COPE PROP/BALLOT COMMITTEE',250000.0],
+		['UNITED FOOD AND COMMERCIAL WORKERS UNION LOCAL 1167',250000.0],
+		['MILLION MORE VOTERS, SPONSORED BY THE CALIFORNIA LABOR FEDERATION, AFL-CIO',237065.0],
+		['CALIFORNIA TEACHERS ASSOCIATION / ISSUES PAC',200000.0],
+		['CALIFORNIA STATE COUNCIL OF LABORERS ISSUES PAC',200000.0],
+		['DISTRICT COUNCIL OF IRONWORKERS POLITICAL ISSUES COMMITTEE',120000.0],
+		['SEIU CALIFORNIA STATE COUNCIL (NONPROFIT 501 (C)(5))',104000.0],
+		['UNITED FOOD & COMMERCIAL WORKERS UNION LOCAL 324',100000.0],
+		['AMALGAMATED TRANSIT UNION',100000.0],
+		['CALIFORNIA CONFERENCE BOARD, AMALGAMATED TRANSIT UNION ISSUES COMMITTEE',100000.0],
+		['TEAMSTERS LOCAL UNION NO. 856',60000.0],
+		['TEAMSTERS LOCAL UNION 63',50000.0],
+		['TEAMSTERS LOCAL UNION NO. 396',40000.0],
+		['TEAMSTERS LOCAL UNION NO. 542',31480.0],
+		['TEAMSTERS LOCAL UNION NO. 166',25812.0],
+		['NO ON 22, A COALITION OF ECONOMIC AND SOCIAL JUSTICE NONPROFITS DEDICATED TO WORKERS RIGHTS',25434.059999999998],
+		['TEAMSTERS LOCAL UNION 986',25000.0],
+		['TEAMSTERS LOCAL UNION NO. 986',25000.0],
+		['SILICON VALLEY RISING ACTION, YES ON PROP 15, NO ON PROP 22, A COALITION OF ECONOMIC AND SOCIAL JUSTICE NONPROFITS (NONPROFIT 501C4)',20234.89],
+		['AMERICAN FEDERATION OF STATE, COUNTY AND MUNICIPAL EMPLOYEES LOCAL 3299',20000.0],
+		['TEAMSTERS LOCAL 1932',13088.0],
+		['TEAMSTERS LOCAL UNION 848',13078.0],
+		['INTERNATIONAL UNION OF OPERATING ENGINEERS LOCAL 12',10000.0],
+		['CALIFORNIA CONFERENCE OF MACHINISTS',10000.0],
+		['SILICON VALLEY RISING ACTION IN SUPPORT OF PROP 15',10000.0],
+		['TEAMSTERS LOCAL UNION NO. 683',9944.0],
+		['TEAMSTERS LOCAL UNION NO. 911',6000.0],
+		['TEAMSTERS LOCAL UNION NO. 630',6000.0],
+		['TEAMSTERS LOCAL UNION #896',5000.0],
+		['SMART TD PAC',5000.0],
+		['TEAMSTERS LOCAL UNION NO. 952',4000.0],
+		['PARTNERSHIP FOR WORKING FAMILIES',2698.62],
+		['POLITICAL COMMITTEE OF IBEW LOCAL UNION NO. 617',2500.0],
+		['SAILORS UNION OF THE PACIFIC',2000.0],
+		['TEAMSTERS LOCAL UNION NO. 481',2000.0],
+		['CALIFORNIA DEMOCRATIC PARTY',1256.01],
+		['NANCY OBER',1000.0],
+		['NATIONAL EMPLOYMENT LAW PROJECT',807.11],
+		['SAN MATEO COUNTY CENTRAL LABOR COUNCIL COMMITTEE ON POLITICAL EDUCATION',500.0],
+	]);
+ 	var options = {title:'Contributors & Donation Size',
+		width:500,
+		height:300,
+		legend:'none',
+		hAxis:{textStyle:{fontName: "Montserrat",fontSize:15,color: "#FEF7DB"},gridlines: {color: "#FEF7DB"},minorGridlines: {color: "#f7b1ab"},baselineColor: '#f7b1ab',format: 'short'},
+		vAxis:{textStyle:{fontName: "Montserrat",fontSize:20,color: "#FEF7DB"},gridlines: {color: "#FEF7DB"},minorGridlines: {color: "#f7b1ab"},baselineColor: '#f7b1ab'},
+		bar: { gap: 0 },
+		titleTextStyle: {fontName: "Gugi",fontSize:20,color: "#f7b1ab"},
+		backgroundColor: 'none',
+		colors:['f7b1ab']
+		};
+ 	var chart = new google.visualization.Histogram(document.getElementById('theNoMoney'));
+ 	chart.draw(data, options);
+}
+
+async function drawYesCoal() { 
+ 	var data = new google.visualization.DataTable();
+ 	data.addColumn('string', 'Term');
+ 	data.addColumn('number', 'Count');
+ 	data.addColumn('number', 'Percentage of Endorsers');
+ 	data.addRows([
+		['Commerce',24,22.429906542056074],
+		['California',20,18.69158878504673],
+		['Chamber',20,18.69158878504673],
+		['Association',16,14.953271028037381],
+		['NAACP',11,10.2803738317757],
+		['National',10,9.345794392523365],
+		['San',9,8.411214953271028],
+		['County',8,7.476635514018691],
+		['Los',8,7.476635514018691],
+		['Angeles',8,7.476635514018691],
+ 	]);
+ 	var options = {title:'Contributors',
+		width:500,
+		height:300,
+		legend:'none',
+		hAxis:{textStyle:{fontName: "Montserrat",fontSize:20,color: "#FEF7DB"},gridlines: {color: "#FEF7DB"},minorGridlines: {color: "#c5e6a6"},baselineColor: '#c5e6a6',format: 'short'},
+		vAxis:{textStyle:{fontName: "Montserrat",fontSize:12,color: "#FEF7DB"},gridlines: {color: "#FEF7DB"},minorGridlines: {color: "#c5e6a6"},baselineColor: '#c5e6a6'},
+		titleTextStyle: {fontName: "Gugi",fontSize:20,color: "#c5e6a6"},
+		backgroundColor: 'none',
+          	seriesType: 'bars',
+          	series: {1: {type: 'line'}},
+		colors: ['FEF7DB','fdefd5','fce7d0','fbdfcb','fad7c5','fad0c0', 'f9c8bb', 'f8c0b5', 'f7b8b0', 'f7b1ab']
+		};
+ 	var chart = new google.visualization.BarChart(document.getElementById('theYesCoal'));
  	chart.draw(data, options);
 }
