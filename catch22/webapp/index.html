@@ -13,6 +13,9 @@
       google.charts.setOnLoadCallback(drawChart3);
       google.charts.setOnLoadCallback(drawYesTimeline);
       google.charts.setOnLoadCallback(drawNoTimeline);
+      google.charts.setOnLoadCallback(drawYesMoney);
+      google.charts.setOnLoadCallback(drawNoMoney);
+      google.charts.setOnLoadCallback(drawYesCoal);
     </script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gugi">
@@ -65,7 +68,7 @@
         </div>
     </div>
     <div id="snapshot-panel">
-        <div id="snapshot">Snapshot
+        <div id="snapshot"><h1>Snapshot</h1>
 	 <div class="flex-container">
          	<div><div id="theContributors"> </div>How many groups funded each coalition</div>
 	 	<div><div id="theMoney"> </div>How much money <br/>was raised</div>
@@ -78,15 +81,16 @@
        <div id="yep">
 	<h2>Yes on Prop 22</h2> 
 	<div class="flex-container">
-        <div id="theYesTimeline"> </div>
+        <div id="theYesTimeline"> </div> <div id="theYesMoney"> </div>
 	</div>
+	<div id="theYesCoal"></div>
        </div>
     </div>
     <div id="no-panel">
        <div id="nope">
         <h2>No on Prop 22</h2>
 	<div class="flex-container">
-        <div id="theNoTimeline"> </div>
+        <div id="theNoTimeline"> </div><div id="theNoMoney"> </div>
 	</div>
        </div>
     </div>       

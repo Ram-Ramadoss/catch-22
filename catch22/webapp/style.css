@@ -220,7 +220,7 @@ li{
   font-size: x-large; 
   display: flex;
   flex-wrap: wrap;
-  height: 60vh;
+  height: 70vh;
   background-color: #ffffff;
   padding: 50px;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
@@ -238,7 +238,7 @@ li{
 #yes-panel{
   display: flex;
   flex-wrap: wrap;
-  height: 85vh;
+  height: 120vh;
   background-image: url('https://i.pinimg.com/originals/c6/20/ca/c620caef7766c43a20b3ab81b2ebcbc0.png');
   background-repeat: no-repeat;
   background-size: cover;
