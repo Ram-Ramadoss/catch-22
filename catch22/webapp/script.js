@@ -202,8 +202,8 @@ async function drawYesMoney() {
 		['INSTACART',37598876.879999995,'d3eab3'],
 		['POSTMATES',20638250.83,'c5e6a6']
  	]);
- 	var options = {title:'Contributors',
-		width:500,
+ 	var options = {title:'Contributors & Donation Size ($)',
+		width:400,
 		height:300,
 		legend:'none',
 		hAxis:{textStyle:{fontName: "Montserrat",fontSize:20,color: "#FEF7DB"},gridlines: {color: "#FEF7DB"},minorGridlines: {color: "#c5e6a6"},baselineColor: '#c5e6a6',format: 'short'},
@@ -275,8 +275,8 @@ async function drawNoMoney() {
 		['NATIONAL EMPLOYMENT LAW PROJECT',807.11],
 		['SAN MATEO COUNTY CENTRAL LABOR COUNCIL COMMITTEE ON POLITICAL EDUCATION',500.0],
 	]);
- 	var options = {title:'Contributors & Donation Size',
-		width:500,
+ 	var options = {title:'Contributors & Donation Size ($)',
+		width:400,
 		height:300,
 		legend:'none',
 		hAxis:{textStyle:{fontName: "Montserrat",fontSize:15,color: "#FEF7DB"},gridlines: {color: "#FEF7DB"},minorGridlines: {color: "#f7b1ab"},baselineColor: '#f7b1ab',format: 'short'},
@@ -294,21 +294,16 @@ async function drawYesCoal() {
  	var data = new google.visualization.DataTable();
  	data.addColumn('string', 'Term');
  	data.addColumn('number', 'Count');
- 	data.addColumn('number', 'Percentage of Endorsers');
+ 	data.addColumn({type:'string', role:'style'});
  	data.addRows([
-		['Commerce',24,22.429906542056074],
-		['California',20,18.69158878504673],
-		['Chamber',20,18.69158878504673],
-		['Association',16,14.953271028037381],
-		['NAACP',11,10.2803738317757],
-		['National',10,9.345794392523365],
-		['San',9,8.411214953271028],
-		['County',8,7.476635514018691],
-		['Los',8,7.476635514018691],
-		['Angeles',8,7.476635514018691],
+		['Commerce',24,'FEF7DB'],
+		['California',20,'ebf1c9'],
+		['Chamber',20, 'd8ebb7'],
+		['Association',16,'c5e6a6'],
+		['NAACP',11,'8dc4a6']
  	]);
- 	var options = {title:'Contributors',
-		width:500,
+ 	var options = {title:'Top 5 Most Frequent Coalition Terms',
+		width:1000,
 		height:300,
 		legend:'none',
 		hAxis:{textStyle:{fontName: "Montserrat",fontSize:20,color: "#FEF7DB"},gridlines: {color: "#FEF7DB"},minorGridlines: {color: "#c5e6a6"},baselineColor: '#c5e6a6',format: 'short'},
@@ -319,6 +314,34 @@ async function drawYesCoal() {
           	series: {1: {type: 'line'}},
 		colors: ['FEF7DB','fdefd5','fce7d0','fbdfcb','fad7c5','fad0c0', 'f9c8bb', 'f8c0b5', 'f7b8b0', 'f7b1ab']
 		};
- 	var chart = new google.visualization.BarChart(document.getElementById('theYesCoal'));
+ 	var chart = new google.visualization.ColumnChart(document.getElementById('theYesCoal'));
+ 	chart.draw(data, options);
+}
+
+async function drawNoCoal() { 
+ 	var data = new google.visualization.DataTable();
+ 	data.addColumn('string', 'Term');
+ 	data.addColumn('number', 'Count');
+ 	data.addColumn({type:'string', role:'style'});
+	data.addRows([
+		['City',47,'FEF7DB'],
+		['Councilmember',38,'fbdfcb'],
+		['San',31,'f9c8bb'],
+		['County',26,'f7b1ab'],
+		['California',24,'c05a74'],
+	]);
+ 	var options = {title:'Top 5 Most Frequent Coalition Terms',
+		width:1000,
+		height:300,
+		legend:'none',
+		hAxis:{textStyle:{fontName: "Montserrat",fontSize:17,color: "#FEF7DB"},gridlines: {color: "#FEF7DB"},minorGridlines: {color: "#c5e6a6"},baselineColor: '#F7B1AB',format: 'short'},
+		vAxis:{textStyle:{fontName: "Montserrat",fontSize:12,color: "#FEF7DB"},gridlines: {color: "#FEF7DB"},minorGridlines: {color: "#c5e6a6"},baselineColor: '#F7B1AB'},
+		titleTextStyle: {fontName: "Gugi",fontSize:20,color: "#F7B1AB"},
+		backgroundColor: 'none',
+          	seriesType: 'bars',
+          	series: {1: {type: 'line'}},
+		colors: ['FEF7DB','fdefd5','fce7d0','fbdfcb','fad7c5','fad0c0', 'f9c8bb', 'f8c0b5', 'f7b8b0', 'f7b1ab']
+		};
+ 	var chart = new google.visualization.ColumnChart(document.getElementById('theNoCoal'));
  	chart.draw(data, options);
 }
