@@ -197,7 +197,7 @@ async function drawYesMoney() {
 		['INSTACART',37598876.879999995,'c5e6a6'],
 		['POSTMATES',20638250.83,'8dc4a6'],
 	]);
-		var options = {title:'Contributors & Donation Size ($)',
+		var options = {title:'All Contributors & Donation Size ($)',
 		width:450,
 		height:300,
 		legend:'none',
@@ -269,12 +269,12 @@ async function drawNoMoney() {
 		['NATIONAL EMPLOYMENT LAW PROJECT',807.11],
 		['SAN MATEO COUNTY CENTRAL LABOR COUNCIL COMMITTEE ON POLITICAL EDUCATION',500.0],
 	]);
-		var options = {title:'Contributors & Donation Size ($)',
+		var options = {title:'All Contributors & Donation Size ($)',
 		width:450,
 		height:300,
 		legend:'none',
 		hAxis:{textStyle:{fontName: "Montserrat",fontSize:20,color: "#FEF7DB"},gridlines: {color: "#FEF7DB"},minorGridlines: {color: "#f7b1ab"},baselineColor: '#f7b1ab',format: 'short'},
-		vAxis:{textStyle:{fontName: "Montserrat",fontSize:20,color: "#FEF7DB"},gridlines: {color: "#FEF7DB"},minorGridlines: {color: "#f7b1ab"},baselineColor: '#f7b1ab'},
+		vAxis:{title:'# of Contributors',titleTextStyle: {italic: false,fontName: "Montserrat",fontSize:20,color: "#FEF7DB"},textStyle:{fontName: "Montserrat",fontSize:20,color: "#FEF7DB"},gridlines: {color: "#FEF7DB"},minorGridlines: {color: "#f7b1ab"},baselineColor: '#f7b1ab'},
 		titleTextStyle: {fontName: "Gugi",fontSize:20,color: "#f7b1ab"},
 		backgroundColor: 'none',
 		bar: { gap: 0 },

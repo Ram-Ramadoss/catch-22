@@ -50,7 +50,7 @@ iPython & Jupyter Notebook was used to process the data.
 <br/>Contributor data was parsed from two files for each committee, the contributions received and late contriutions received files and organized:
 <br/> 1. By Contributor: The aggregate contributions made by each contributor is summarized
 <br/> 2. By Date: The total contributions made per day is summarized
-<br/>Coalition lists were parsed by term and every term and its frequency was calculated.
+<br/>Coalition lists were parsed by term and every term and its frequency was calculated (discounting conjunctions, locations, and general terms for group that appear in both coalitions).
 
 All generated tables are saved as CSV files by the Notebook here. The guide.csv file stores key facts for each coalition and indexes the file name for each data category.
 <br/>data/processed-data
