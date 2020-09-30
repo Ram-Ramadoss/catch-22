@@ -291,9 +291,9 @@ async function drawYesCoal() {
 	data.addRows([
 		['Commerce',24,'FEF7DB'],
 		['Chamber',20,'ebf1c9'],
-		['California',20,'d8ebb7'],
-		['Association',16,'c5e6a6'],
-		['NAACP',11,'8dc4a6'],
+		['NAACP',11,'d8ebb7'],
+		['Black',6,'c5e6a6'],
+		['Council',6,'8dc4a6'],
 	]);
 		var options = {title:'Coalition Members: 5 Most Frequent Terms',
 		width:650,
@@ -313,11 +313,11 @@ async function drawNoCoal() {
 	data.addColumn('number', 'Count');
 	data.addColumn({type:'string', role:'style'});
 	data.addRows([
-		['City',47,'FEF7DB'],
-		['Councilmember',38,'fbdfcb'],
-		['San',31,'f9c8bb'],
-		['County',26,'f7b1ab'],
-		['California',24,'c05a74'],
+		['Councilmember',38,'FEF7DB'],
+		['Board',22,'fbdfcb'],
+		['Democratic',17,'f9c8bb'],
+		['Supervisor',16,'f7b1ab'],
+		['Mayor',15,'c05a74'],
 	]);
 		var options = {title:'Coalition Members: 5 Most Frequent Terms',
 		width:650,
