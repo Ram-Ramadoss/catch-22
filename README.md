@@ -10,13 +10,11 @@ https://tramadoss.github.io/catch-22/catch22/webapp/index.html
 
 ## Definitions and Data Sources
 Coalition: List of all groups and people who either support or oppose Prop 22 but do not necessarily contribute money to supporting/opposing Prop 22
-
-Contributors: List of all groups and people who financially support the coalitions to support or oppose Prop 22
+<br/>Contributors: List of all groups and people who financially support the coalitions to support or oppose Prop 22
 
 
 Contributor data was collected from: http://cal-access.sos.ca.gov/Campaign/Measures/
-
-Coalition lists were gathered from each coalition's website:
+<br/>Coalition lists were gathered from each coalition's website:
 <br/>Yes Coalition: https://yeson22.com/coalition/
 <br/>No Coalition: https://nooncaprop22.com/our_coalition
 
@@ -24,29 +22,25 @@ Coalition lists were gathered from each coalition's website:
 
 ### Contributor Data
 Only contributor data from the highest collecting committees for each side was considered in this project. From the Cal-Access webpage (http://cal-access.sos.ca.gov/Campaign/Measures/Detail.aspx?id=1423938&session=2019), it was determined that the main committees were:
-<br/>
 <br/>Yes: Committee ID 1422181 (SUPPORT)
 <br/>No:  Committee ID 1424537 (OPPOSE)
 
 Excel files from the "Contributions Received" and "Late and $5000+ Contributions Received" tabs for each committee were stored as follows:
-data/1422181_SUPPORT/contributions_received.xls
-data/1422181_SUPPORT/late_5000_contributions_received.xls
-data/1424537_OPPOSE/contributions_received.xls
-data/1424537_OPPOSE/late_5000_contributions_received.xls
+<br/>data/1422181_SUPPORT/contributions_received.xls
+<br/>data/1422181_SUPPORT/late_5000_contributions_received.xls
+<br/>data/1424537_OPPOSE/contributions_received.xls
+<br/>data/1424537_OPPOSE/late_5000_contributions_received.xls
 
 ### Coalition Data
 Coalition lists were manually copied from each coalition's webpage into text files and stored as follows:
 <br/>data/coalition-lists/YesOnProp22.txt
 <br/>data/coalition-lists/NoOnProp22.txt
 
-## Date Collected
+### Date Collected
 Data was collected on these days:
-
-Contributions received files on 9/18/2020
-
-Late contributions received files refreshed on 9/26/2020
-
-Coalition lists on 9/22
+<br/><\t>Contributions received files on 9/18/2020
+<br/><\t>Late contributions received files refreshed on 9/26/2020
+<br/><\t>Coalition lists on 9/22
 
 ## Data Processing
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tramadoss/catch-22/master?filepath=data%2Fdata-processor.ipynb)
