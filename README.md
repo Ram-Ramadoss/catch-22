@@ -10,16 +10,25 @@ https://tramadoss.github.io/catch-22/catch22/webapp/index.html
 
 ## Definitions and Data Sources
 Coalition: List of all groups and people who either support or oppose Prop 22 but do not necessarily contribute money to supporting/opposing Prop 22
+
 Contributors: List of all groups and people who financially support the coalitions to support or oppose Prop 22
 
+
 Contributor data was collected from: http://cal-access.sos.ca.gov/Campaign/Measures/
+
 Coalition lists were gathered from each coalition's website:
+
 Yes Coalition: https://yeson22.com/coalition/
+
 No Coalition: https://nooncaprop22.com/our_coalition
 
 ## Data Collection Process
+
+### Contributor Data
 Only contributor data from the highest collecting committees for each side was considered in this project. From the Cal-Access webpage (http://cal-access.sos.ca.gov/Campaign/Measures/Detail.aspx?id=1423938&session=2019), it was determined that the main committees were:
+
 YES: Committee ID 1422181 (SUPPORT)
+
 NO:  Committee ID 1424537 (OPPOSE)
 
 Excel files from the "Contributions Received" and "Late and $5000+ Contributions Received" tabs for each committee were stored as follows:
@@ -28,13 +37,20 @@ data/1422181_SUPPORT/late_5000_contributions_received.xls
 data/1424537_OPPOSE/contributions_received.xls
 data/1424537_OPPOSE/late_5000_contributions_received.xls
 
+### Coalition Data
 Coalition lists were manually copied from each coalition's webpage into text files and stored as follows:
+
 data/coalition-lists/YesOnProp22.txt
+
 data/coalition-lists/NoOnProp22.txt
 
+## Date Collected
 Data was collected on these days:
+
 Contributions received files on 9/18/2020
+
 Late contributions received files refreshed on 9/26/2020
+
 Coalition lists on 9/22
 
 ## Data Processing
@@ -42,9 +58,11 @@ Coalition lists on 9/22
 
 ## Repo Architecture
 /catch22/webapp stores the frontend data visualization tool created, a webpage, along with associated css, script, and image files
+
 /data stores the collected data, the data processing scripts and the processed data
 
 ## Contributors
 
 Trisha Ramadoss, UC Davis Transportation Technology & Policy PhD student, BSE Electical Engineerng & Physics 
+
 Nitin Ramadoss, University of Florida, Candidate for BS in Computer Science
