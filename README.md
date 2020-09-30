@@ -1,7 +1,7 @@
 # Catch-22
 
 ## Motivation
-Catch 22 is a data visualization tool to see who supports and funds the "Yes" and "No" coalitions for California Proposition 22. 
+Catch-22 is a data visualization tool to see who supports and funds the "Yes" and "No" coalitions for California Proposition 22. 
 
 Prop 22, the App-Based Drivers as Contractors and Labor Policies Initiative, is on the 2020 California ballot. It establishes different criteria for determining whether app-based transportation (rideshare) and delivery drivers are “employees” or “independent contractors.” The Yes Coalition suppports this initiative, which would classify app-based drivers as "independent contractors" and adopt labor and wage policies specific to app-based drivers and companies. The No Coalition opposes this initiative, which would mean California Assembly Bill 5 (2019) will be used to decide whether app-based drivers are employees or independent contractors. Courts in California as recently as August 2020 ruled that that AB5 requires these companies to classify their drivers as "employees."
 
@@ -47,7 +47,7 @@ Data was collected on these days:
 
 ## Data Processing
 iPython & Jupyter Notebook was used to process the data. 
-<br/>Contributor data was parsed from two files for each committee, the contributions received and late contriutions received files and organized in 2 ways:
+<br/>Contributor data was parsed from two files for each committee, the contributions received and late contriutions received files and organized:
 <br/> 1. By Contributor: The aggregate contributions made by each contributor is summarized
 <br/> 2. By Date: The total contributions made per day is summarized
 <br/>Coalition lists were parsed by term and every term and its frequency was calculated.
