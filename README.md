@@ -45,16 +45,18 @@ Data was collected on these days:
 
 ## Data Processing
 iPython & Jupyter Notebook was used to process the data. 
-<br/>Contributor data was parsed from two files for each committee, the contributions received and late contriutions received files and organized in 3 ways:
-<br/>
+<br/>Contributor data was parsed from two files for each committee, the contributions received and late contriutions received files and organized in 2 ways:
+<br/> 1. By Contributor: The aggregate contributions made by each contributor is summarized
+<br/> 2. By Date: The total contributions made per day is summarized
 <br/>Coalition lists were parsed by term and every term and its frequency was calculated.
 
-All generated tables are saved as CSV files by the Notebook here:
+All generated tables are saved as CSV files by the Notebook here. The guide.csv file stores key facts for each coalition and indexes the file name for each data category.
 <br/>data/processed-data
 
 Additionally, the Notebook was also used to automatically generate the javascript for the data visualization tool
 
 Launch the Jupyter Notebook here to view the detailed data processing steps:
+
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tramadoss/catch-22/master?filepath=data%2Fdata-processor.ipynb)
 
 ## Repo Architecture
