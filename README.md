@@ -17,19 +17,16 @@ Contributors: List of all groups and people who financially support the coalitio
 Contributor data was collected from: http://cal-access.sos.ca.gov/Campaign/Measures/
 
 Coalition lists were gathered from each coalition's website:
-
-Yes Coalition: https://yeson22.com/coalition/
-
-No Coalition: https://nooncaprop22.com/our_coalition
+<br/>Yes Coalition: https://yeson22.com/coalition/
+<br/>No Coalition: https://nooncaprop22.com/our_coalition
 
 ## Data Collection Process
 
 ### Contributor Data
 Only contributor data from the highest collecting committees for each side was considered in this project. From the Cal-Access webpage (http://cal-access.sos.ca.gov/Campaign/Measures/Detail.aspx?id=1423938&session=2019), it was determined that the main committees were:
-
-YES: Committee ID 1422181 (SUPPORT)
-
-NO:  Committee ID 1424537 (OPPOSE)
+<br/>
+<br/>Yes: Committee ID 1422181 (SUPPORT)
+<br/>No:  Committee ID 1424537 (OPPOSE)
 
 Excel files from the "Contributions Received" and "Late and $5000+ Contributions Received" tabs for each committee were stored as follows:
 data/1422181_SUPPORT/contributions_received.xls
@@ -39,10 +36,8 @@ data/1424537_OPPOSE/late_5000_contributions_received.xls
 
 ### Coalition Data
 Coalition lists were manually copied from each coalition's webpage into text files and stored as follows:
-
-data/coalition-lists/YesOnProp22.txt
-
-data/coalition-lists/NoOnProp22.txt
+<br/>data/coalition-lists/YesOnProp22.txt
+<br/>data/coalition-lists/NoOnProp22.txt
 
 ## Date Collected
 Data was collected on these days:
