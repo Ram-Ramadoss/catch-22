@@ -83,8 +83,8 @@ h3.page-header {
 
 #desc{
   padding: 50px;
-  text-align: left;
-  float: left;
+  text-align: right;
+  float: right;
   width:350px
 }
 
@@ -221,7 +221,7 @@ li{
   flex-wrap: wrap;
   height: 100vh;
   background-color: #FEF7DB;
-  background-image: url('assets/mosaic.png');
+  background-image: url('assets/mosaic3.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
