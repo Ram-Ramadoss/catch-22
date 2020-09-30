@@ -1,9 +1,11 @@
 # Catch-22
 
 ## Motivation
-Catch 22 is a data visualization tool to see who supports and funds the "Yes" and "No" coalitions for California Proposition 22. 
+Catch-22 is a data visualization tool to see who supports and funds the "Yes" and "No" coalitions for California Proposition 22. 
 
 Prop 22, the App-Based Drivers as Contractors and Labor Policies Initiative, is on the 2020 California ballot. It establishes different criteria for determining whether app-based transportation (rideshare) and delivery drivers are “employees” or “independent contractors.” The Yes Coalition suppports this initiative, which would classify app-based drivers as "independent contractors" and adopt labor and wage policies specific to app-based drivers and companies. The No Coalition opposes this initiative, which would mean California Assembly Bill 5 (2019) will be used to decide whether app-based drivers are employees or independent contractors. Courts in California as recently as August 2020 ruled that that AB5 requires these companies to classify their drivers as "employees."
+
+We thought this topic, who supports and funds each side, was an important question to investigate for a couple reasons. For one, left-leaning groups & individuals are divided on this issue. Many high-profile Democrats such as Kamala Harris and Joe Biden publicly oppose Prop 22 while some well-known civil rights groups such as NAACP chapters support it. Secondly, this proposition is one of the most funded in California history. As you will see in the tool, over $300M has been raised combined by the two coalitions.
 
 ## Data Visualization Tool
 https://tramadoss.github.io/catch-22/catch22/webapp/index.html
@@ -45,7 +47,7 @@ Data was collected on these days:
 
 ## Data Processing
 iPython & Jupyter Notebook was used to process the data. 
-<br/>Contributor data was parsed from two files for each committee, the contributions received and late contriutions received files and organized in 2 ways:
+<br/>Contributor data was parsed from two files for each committee, the contributions received and late contriutions received files and organized:
 <br/> 1. By Contributor: The aggregate contributions made by each contributor is summarized
 <br/> 2. By Date: The total contributions made per day is summarized
 <br/>Coalition lists were parsed by term and every term and its frequency was calculated.
