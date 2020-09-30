@@ -6,7 +6,7 @@ async function drawChart() {
 		['YES',5],
 		['NO ',54]
 	]);
-		var options = {title:'Number of Funders',
+		var options = {title:'# of Funding Sources',
 		width:350,
 		height:300,
 		legend:'none',
@@ -290,8 +290,8 @@ async function drawYesCoal() {
 	data.addColumn({type:'string', role:'style'});
 	data.addRows([
 		['Commerce',24,'FEF7DB'],
-		['Chamber',20,'ebf1c9'],
-		['California',20,'d8ebb7'],
+		['California',20,'ebf1c9'],
+		['Chamber',20,'d8ebb7'],
 		['Association',16,'c5e6a6'],
 		['NAACP',11,'8dc4a6'],
 	]);
