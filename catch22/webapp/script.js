@@ -23,7 +23,7 @@ async function drawChart() {
 async function drawChart2() {
 	var data = new google.visualization.DataTable();
 	data.addColumn('string', 'Campaign');
-	data.addColumn('number', 'Number of Contributors');
+	data.addColumn('number', 'Contributions $');
 	data.addColumn({type:'string', role:'style'});
 	data.addRows([
 		['YES',295793679.34000003, '#c5e6a6'],
@@ -45,7 +45,7 @@ async function drawChart2() {
 }async function drawChart3() {
 	var data = new google.visualization.DataTable();
 	data.addColumn('string', 'Campaign');
-	data.addColumn('number', 'Number of Contributors');
+	data.addColumn('number', 'Number of Endorsers');
 	data.addRows([
 		['YES',107],
 		['NO ',212]
@@ -188,7 +188,7 @@ async function drawNoTimeline() {
 async function drawYesMoney() {
 	var data = new google.visualization.DataTable();
 	data.addColumn('string', 'Contributor');
-	data.addColumn('number', '$ Contributed');
+	data.addColumn('number', 'Contributed $');
 	data.addColumn({type:'string', role:'style'});
 	data.addRows([
 		['UBER',81102105.9,'FEF7DB'],
@@ -212,7 +212,7 @@ async function drawYesMoney() {
 async function drawNoMoney() {
 	var data = new google.visualization.DataTable();
 	data.addColumn('string', 'Contributor');
-	data.addColumn('number', '$ Contributed');
+	data.addColumn('number', 'Contributed $');
 	data.addRows([
 		['INTERNATIONAL BROTHERHOOD OF TEAMSTERS',1500000.0],
 		['SERVICE EMPLOYEES INTERNATIONAL UNION',1100000.0],
@@ -290,8 +290,8 @@ async function drawYesCoal() {
 	data.addColumn({type:'string', role:'style'});
 	data.addRows([
 		['Commerce',24,'FEF7DB'],
-		['California',20,'ebf1c9'],
-		['Chamber',20,'d8ebb7'],
+		['Chamber',20,'ebf1c9'],
+		['California',20,'d8ebb7'],
 		['Association',16,'c5e6a6'],
 		['NAACP',11,'8dc4a6'],
 	]);
@@ -300,7 +300,7 @@ async function drawYesCoal() {
 		height:300,
 		legend:'none',
 		hAxis:{textStyle:{fontName: "Montserrat",fontSize:20,color: "#FEF7DB"},gridlines: {color: "#FEF7DB"},minorGridlines: {color: "#c5e6a6"},baselineColor: '#c5e6a6',format: 'short'},
-		vAxis:{textStyle:{fontName: "Montserrat",fontSize:20,color: "#FEF7DB"},gridlines: {color: "#FEF7DB"},minorGridlines: {color: "#c5e6a6"},baselineColor: '#c5e6a6'},
+		vAxis:{title:'Term Frequency',titleTextStyle: {italic: false,fontName: "Montserrat",fontSize:20,color: "#FEF7DB"},textStyle:{fontName: "Montserrat",fontSize:20,color: "#FEF7DB"},gridlines: {color: "#FEF7DB"},minorGridlines: {color: "#c5e6a6"},baselineColor: '#c5e6a6'},
 		titleTextStyle: {fontName: "Gugi",fontSize:20,color: "#c5e6a6"},
 		backgroundColor: 'none',
 		};
@@ -324,7 +324,7 @@ async function drawNoCoal() {
 		height:300,
 		legend:'none',
 		hAxis:{textStyle:{fontName: "Montserrat",fontSize:20,color: "#FEF7DB"},gridlines: {color: "#FEF7DB"},minorGridlines: {color: "#F7B1AB"},baselineColor: '#F7B1AB',format: 'short'},
-		vAxis:{textStyle:{fontName: "Montserrat",fontSize:20,color: "#FEF7DB"},gridlines: {color: "#FEF7DB"},minorGridlines: {color: "#F7B1AB"},baselineColor: '#F7B1AB'},
+		vAxis:{title:'Term Frequency',titleTextStyle: {italic: false,fontName: "Montserrat",fontSize:20,color: "#FEF7DB"},textStyle:{fontName: "Montserrat",fontSize:20,color: "#FEF7DB"},gridlines: {color: "#FEF7DB"},minorGridlines: {color: "#F7B1AB"},baselineColor: '#F7B1AB'},
 		titleTextStyle: {fontName: "Gugi",fontSize:20,color: "#F7B1AB"},
 		backgroundColor: 'none',
 		};
