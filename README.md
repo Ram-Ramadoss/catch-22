@@ -10,6 +10,7 @@ https://tramadoss.github.io/catch-22/catch22/webapp/index.html
 
 ## Definitions and Data Sources
 Coalition: List of all groups and people who either support or oppose Prop 22 but do not necessarily contribute money to supporting/opposing Prop 22
+<br/>Committee: Official groups formed to support or oppose ballot measures, financial contributions received and spent by these groups are publicly available data.
 <br/>Contributors: List of all groups and people who financially support the coalitions to support or oppose Prop 22
 
 
@@ -38,20 +39,29 @@ Coalition lists were manually copied from each coalition's webpage into text fil
 
 ### Date Collected
 Data was collected on these days:
-<br/><\t>Contributions received files on 9/18/2020
-<br/><\t>Late contributions received files refreshed on 9/26/2020
-<br/><\t>Coalition lists on 9/22
+<br/>Contributions received files on 9/18/2020
+<br/>Late contributions received files refreshed on 9/26/2020
+<br/>Coalition lists on 9/22
 
 ## Data Processing
+iPython & Jupyter Notebook was used to process the data. 
+<br/>Contributor data was parsed from two files for each committee, the contributions received and late contriutions received files and organized in 3 ways:
+<br/>
+<br/>Coalition lists were parsed by term and every term and its frequency was calculated.
+
+All generated tables are saved as CSV files by the Notebook here:
+<br/>data/processed-data
+
+Additionally, the Notebook was also used to automatically generate the javascript for the data visualization tool
+
+Launch the Jupyter Notebook here to view the detailed data processing steps:
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tramadoss/catch-22/master?filepath=data%2Fdata-processor.ipynb)
 
 ## Repo Architecture
 /catch22/webapp stores the frontend data visualization tool created, a webpage, along with associated css, script, and image files
-
-/data stores the collected data, the data processing scripts and the processed data
+<br/>/data stores the collected data, the data processing scripts and the processed data
 
 ## Contributors
 
 Trisha Ramadoss, UC Davis Transportation Technology & Policy PhD student, BSE Electical Engineerng & Physics 
-
-Nitin Ramadoss, University of Florida, Candidate for BS in Computer Science
+<br/>Nitin Ramadoss, University of Florida, Candidate for BS in Computer Science
