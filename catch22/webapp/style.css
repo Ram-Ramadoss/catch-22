@@ -81,6 +81,13 @@ h3.page-header {
   flex: 1;
 }
 
+#desc{
+  padding: 50px;
+  text-align: right;
+  float: right;
+  width:350px
+}
+
 .blurb {
   font-size: small;
   font-family: "Montserrat";
@@ -214,7 +221,7 @@ li{
   flex-wrap: wrap;
   height: 100vh;
   background-color: #FEF7DB;
-  background-image: url('assets/mosaic.png');
+  background-image: url('assets/mosaic3.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -255,6 +262,7 @@ li{
   flex-wrap: wrap;
   height: 120vh;
   background-image: url('https://i.pinimg.com/originals/c6/20/ca/c620caef7766c43a20b3ab81b2ebcbc0.png');
+  background-image: url('assets/mosaic2.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -278,6 +286,7 @@ li{
   flex-wrap: wrap;
   height: 120vh;
   background-image: url('https://i.pinimg.com/originals/c6/20/ca/c620caef7766c43a20b3ab81b2ebcbc0.png');
+  background-image: url('assets/mosaic2.png');
   background-color: #89043D;
   background-repeat: no-repeat;
   background-size: cover;
