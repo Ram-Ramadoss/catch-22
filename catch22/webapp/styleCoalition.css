@@ -51,14 +51,14 @@ a {
   cursor: pointer;
 }
 
-.yes{
-  background-color: #c5e6a6;
-  color: #56a3a6;
-}
-
 .button:hover {
   background-color: #064789;
   color: #FEF7DB;
+}
+
+.yes{
+  background-color: #c5e6a6;
+  color: #56a3a6;
 }
 
 .no {

@@ -88,6 +88,23 @@ h3.page-header {
   width:350px
 }
 
+.button {
+  border: none;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 2px 2px;
+  transition-duration: 0.1s;
+  cursor: pointer;
+  font-family: "Montserrat";
+}
+
+.button:hover {
+  background-color: #064789;
+  color: #FEF7DB;
+}
+
 .blurb {
   font-size: small;
   font-family: "Montserrat";
