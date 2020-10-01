@@ -1,0 +1,223 @@
+<html>
+  <head>
+	<link rel="stylesheet" href="styleCoalition.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gugi">
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<script type="text/javascript">
+		google.charts.load('current', {packages:['wordtree']});
+		google.charts.setOnLoadCallback(drawChart);
+
+		function drawChart() {
+			var data = google.visualization.arrayToDataTable(
+          [ ['Phrases'],
+['California-Hawaii State Conference NAACP'],
+['California State National Action Network'],
+['California Urban Partnership'],
+['Hispanic 100'],
+['National Action Network – Los Angeles Chapter'],
+['National Action Network – Sacramento Chapter'],
+['National Asian American Coalition'],
+['Antelope Valley NAACP'],
+['Asian Industry B2B'],
+['Asians in Energy'],
+['Asian-American Resource Center San Bernardino'],
+['Baptist Ministers Conference of Los Angeles and Southern California'],
+['Black American Political Association California – Sacramento Chapter'],
+['Black Lives Matter Sacramento'],
+['Black Women Organized for Political Action'],
+['Califia National Organization for Women (NOW) – Greater Los Angeles Chapter'],
+['Central Valley Yemeni Society'],
+['Compton Branch NAACP'],
+['Cynthia Perry Ray Foundation'],
+['Fed Up San Franciscans'],
+['Greater Sacramento Urban League'],
+['Hayward South County NAACP'],
+['Hire Hope Learning Academy'],
+['League of United Latin American Citizens (LULAC) Council #3288'],
+['Life Matters, inc.'],
+['Lift Up Love Always'],
+['Long Beach Community Aid Project'],
+['Los Angeles Metropolitan Churches'],
+['Los Angeles NAACP'],
+['National Diversity Coalition'],
+['North San Diego County NAACP'],
+['Praising Hands LLC'],
+['San Fernando Valley NAACP'],
+['San Gabriel Valley NAACP'],
+['San Luis Obispo Branch NAACP'],
+['Si Se Puede Foundation of Fresno, Tulare, Kern and Kings Counties'],
+['Stockton NAACP'],
+['Ventura County NAACP'],
+['Veterans Benefit Team Roping Foundation'],
+['California Peace Officers’ Association'],
+['California Police Chiefs Association'],
+['California State Sheriffs’ Association'],
+['California Narcotics Officers’ Association'],
+['California College and University Police Chiefs Association'],
+['Crime Victims United of California'],
+['Crime Survivors, Inc.'],
+['Crime Survivors Resource Center'],
+['Crime Survivors PAC'],
+['National Association of Women Law Enforcement Executives (NAWLEE)'],
+['Fathers Against Drunk Driving'],
+['Vera’s Open Arms, inc.'],
+['California Senior Advocates League'],
+['LeadingAge California'],
+['National Hispanic Council on Aging'],
+['California Chamber of Commerce'],
+['California Small Business Association'],
+['CalAsian Chamber of Commerce'],
+['Coalition List'],
+['California Black Chamber of Commerce'],
+['California Hispanic Chambers of Commerce'],
+['California Taxpayer Protection Committee'],
+['National Black Chamber of Commerce'],
+['National Taxpayers Union'],
+['US Black Chambers, Inc.'],
+['American Indian Chamber of Commerce California'],
+['Bay Area Council'],
+['Los Angeles County Business Federation (LA BizFed)'],
+['Orange County Business Council'],
+['Silicon Valley Leadership Group'],
+['Southwest California Legislative Council'],
+['Valley Industry & Commerce Association (VICA)'],
+['Business Council of San Joaquin County'],
+['Brea Chamber of Commerce'],
+['Compton Latino Chamber of Commerce'],
+['Central City Association – Los Angeles'],
+['Elk Grove Chamber of Commerce'],
+['Fresno Chamber of Commerce'],
+['Gateway Chambers Alliance'],
+['Greater Riverside Chambers of Commerce'],
+['Greater Stockton Chamber of Commerce'],
+['Hollywood Chamber of Commerce'],
+['Latin Business Association'],
+['Lodi District Chamber of Commerce'],
+['Los Angeles Latino Chamber of Commerce'],
+['Murrieta-Wildomar Chamber of Commerce'],
+['Oceanside Chamber of Commerce'],
+['Orange County Restaurant Association'],
+['Placer County Taxpayers Association'],
+['Redondo Beach Chamber of Commerce'],
+['Sacramento Metro Chamber of Commerce'],
+['San Francisco Chamber of Commerce'],
+['San Francisco Travel Association'],
+['South Bay Association of Chambers of Commerce'],
+['The Silicon Valley Organization'],
+['Torrance Area Chamber of Commerce'],
+['Tulare-Kings Hispanic Chamber of Commerce'],
+['African American Farmers of California'],
+['Nisei Farmers League'],
+['Consumer Choice Center'],
+['The Internet Association'],
+['TechNet'],
+['Hop Skip Drive'],
+['Uber'],
+['Lyft'],
+['DoorDash'],
+['Instacart'],
+['Postmates'],
+
+          ]
+        );
+
+        var options = {
+          wordtree: {
+            format: 'implicit',
+            type: 'double',
+            word: 'Commerce',
+          }, fontName: 'Calibri',
+	  colors: ['#56a3a6'],
+	  backgroundColor: '#c5e6a6'	
+        };
+
+        var options2 = {
+          wordtree: {
+            format: 'implicit',
+            type: 'double',
+            word: 'Chamber',
+          }, fontName: 'Calibri',
+	  colors: ['#56a3a6'],
+	  backgroundColor: '#c5e6a6'
+        };
+
+        var options3 = {
+          wordtree: {
+            format: 'implicit',
+            type: 'double',
+            word: 'NAACP',
+          }, fontName: 'Calibri',
+	  colors: ['#56a3a6'],
+	  backgroundColor: '#c5e6a6'
+        };
+
+        var options4 = {
+          wordtree: {
+            format: 'implicit',
+            type: 'double',
+            word: 'Black',
+          }, fontName: 'Calibri',
+	  colors: ['#56a3a6'],
+	  backgroundColor: '#c5e6a6'
+        };
+
+        var options5 = {
+          wordtree: {
+            format: 'implicit',
+            type: 'double',
+            word: 'Council',
+          }, fontName: 'Calibri',
+	  colors: ['#56a3a6'],
+	  backgroundColor: '#c5e6a6'
+        };
+
+        var chart = new google.visualization.WordTree(document.getElementById('wordtree1'));
+        chart.draw(data, options);
+	var chart2 = new google.visualization.WordTree(document.getElementById('wordtree2'));
+        chart2.draw(data, options2);
+	var chart3 = new google.visualization.WordTree(document.getElementById('wordtree3'));
+        chart3.draw(data, options3);
+	var chart4 = new google.visualization.WordTree(document.getElementById('wordtree4'));
+        chart4.draw(data, options4);
+	var chart5 = new google.visualization.WordTree(document.getElementById('wordtree5'));
+        chart5.draw(data, options5);
+      }
+    </script>
+  </head>
+  <body>
+	<div class="flex-container">
+        <h3>Explore the 107 groups that form the Yes Coalition</h3>
+	</div>
+	<div class="flex-container">
+	<h7>Start with these 5 most frequently occurring terms: </h7><br/><br/>
+	</div>
+	<div class="flex-container">
+        <button class="button yes"><a href="#wordtree1">Commerce</a></button>
+        <button class="button yes"><a href="#wordtree2">Chamber</a></button>
+        <button class="button yes"><a href="#wordtree3">NAACP</a></button>
+        <button class="button yes"><a href="#wordtree4">Black</a></button>
+        <button class="button yes"><a href="#wordtree5">Council</a></button>
+	</div>
+
+	<div class="flex-container">
+	<button class="button"><a href="index.html#yes-panel">Go Back</a></button>
+	</div>
+
+	<div class="flex-container">
+	<div id="wordtree1" style="width: 900px; height: 500px;"></div>
+	</div>
+	<div class="flex-container">
+	<div id="wordtree2" style="width: 900px; height: 500px;"></div>
+	</div>
+	<div class="flex-container">
+	<div id="wordtree3" style="width: 900px; height: 500px;"></div>
+	</div>
+	<div class="flex-container">
+	<div id="wordtree4" style="width: 900px; height: 500px;"></div>
+	</div>
+	<div class="flex-container">
+	<div id="wordtree5" style="width: 900px; height: 500px;"></div>
+	</div>
+  </body>
+</html>
