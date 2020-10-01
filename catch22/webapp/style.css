@@ -101,7 +101,10 @@ h3.page-header {
 }
 
 .button:hover {
-  background-color: #064789;
+  background-color: #FEF7DB;
+}
+
+.button > a {
   color: #FEF7DB;
 }
 
@@ -116,8 +119,17 @@ h3.page-header {
   color: #89043D;
 }
 
+.no a {
+  color: #89043D;
+}
+
+
 .yes {
   background-color: #c5e6a6;
+  color: #56a3a6;
+}
+
+.yes a {
   color: #56a3a6;
 }
 
