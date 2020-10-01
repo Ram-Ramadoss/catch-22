@@ -1,0 +1,67 @@
+.flex-container {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color:#56a3a6;
+}
+
+.flex-container > div {
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  background-color:#c5e6a6
+}
+
+.noflex-container {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color:#89043D;
+}
+
+.noflex-container > div {
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  background-color:#F7B1AB;
+}
+
+
+body,html,button {
+  font-family: "Montserrat";
+  font-size: x-large;
+  background-color:#FEF7DB
+}
+
+a {
+  color:#FEF7DB
+}
+
+
+.button {
+  border: none;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 2px 2px;
+  transition-duration: 0.1s;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #064789;
+  color: #FEF7DB;
+}
+
+.yes{
+  background-color: #c5e6a6;
+  color: #56a3a6;
+}
+
+.no {
+  background-color: #F7B1AB;
+  color: #89043D;
+}

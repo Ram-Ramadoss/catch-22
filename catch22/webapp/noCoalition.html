@@ -1,0 +1,328 @@
+<html>
+  <head>
+	<link rel="stylesheet" href="styleCoalition.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gugi">
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<script type="text/javascript">
+		google.charts.load('current', {packages:['wordtree']});
+		google.charts.setOnLoadCallback(drawChart);
+
+		function drawChart() {
+			var data = google.visualization.arrayToDataTable(
+          [ ['Phrases'],
+['AFSCME Local 3916'],
+['Alice B. Toklas LGBTQ Democratic Club'],
+['Alliance'],
+['American Federation of State, County and Municipal Employees (AFSCME)'],
+['Amalgamated Transit Union Local 192'],
+['Bay Rising'],
+['Bet Tzedek Legal Services'],
+['Black Women for Wellness Action Project'],
+['Bike East Bay'],
+['BlueGreen Alliance'],
+['California Alliance for Retired Americans'],
+['California Democratic Party'],
+['California Employment Lawyers Association'],
+['California Environmental Justice Alliance'],
+['California Faculty Association'],
+['California Federation of Teachers'],
+['California Immigrant Policy Center'],
+['California Labor Federation'],
+['California Nurses Association'],
+['California Professional Firefighters'],
+['California Teachers Association'],
+['California Work and Family Coalition'],
+['Color of Change'],
+['Consumer Federation of California'],
+['Equal Rights Advocates'],
+['Gig Workers Rising'],
+['Greater California Livery Association'],
+['Greenlining Institute'],
+['Harvey Milk LGBTQ Democratic Club'],
+['Health Access'],
+['Human Impact Partners'],
+['LAANE'],
+['La Raza Centro Legal'],
+['Legal Aid at Work'],
+['Mi Familia Vota'],
+['Middle Class Taxpayers Association'],
+['Mobile Workers Alliance'],
+['Napa Solano Central Labor Council'],
+['National Domestic Workers'],
+['National Employment Law Project'],
+['National Womens Law Center'],
+['Pilipino American Los Angeles Democrats'],
+['Rideshare Drivers United'],
+['Rideshare Justice Project'],
+['Rose Pak Democratic Club'],
+['Sacramento Central Labor Council, AFL-CIO'],
+['San Francisco Berniecrats'],
+['San Francisco DSA'],
+['San Francisco Latino Democratic Club'],
+['San Francisco League of Pissed Off Voters'],
+['San Francisco Taxi Workers Alliance'],
+['San Francisco Women’s Political Committee'],
+['San Mateo County Democratic Party'],
+['Santa Clara County Wage Theft Coalition'],
+['Santa Monica Democratic Club'],
+['SEIU California State Council'],
+['Sierra Club California'],
+['Silicon Valley Rising'],
+['Social Security Works California'],
+['Southern California Coalition for Occupational Safety & Health'],
+['Southwest Regional Council of Carpenters'],
+['State Building and Construction Trades Council of California'],
+['Stonewall Democratic Club'],
+['Taxi Workers Association of Los Angeles'],
+['Teamsters Joint Council 7'],
+['Teamsters Joint Council 42'],
+['Transport Workers Union of America'],
+['UFCW Local 5'],
+['UFCW Western States Council'],
+['Union of Concerned Scientists'],
+['UNITE HERE'],
+['United Farm Workers'],
+['Western Center on Law and Poverty'],
+['Women’s March San Francisco'],
+['Working Partnerships USA'],
+['Worksafe'],
+['Former Vice President Joe Biden'],
+['Former U.S. Secretary of Labor Robert Reich'],
+['U.S. Senator Kamala Harris'],
+['U.S. Senator Elizabeth Warren'],
+['State Controller Betty Yee'],
+['State Insurance Commissioner Ricardo Lara'],
+['State Superintendent of Public Instruction Tony Thurmond'],
+['Civil Rights Leader Dolores Huerta'],
+['State Senator Maria Elena Durazo'],
+['State Senator Nancy Skinner'],
+['State Senator Scott Wiener'],
+['Assembly Speaker Anthony Rendon'],
+['Assemblywoman Cecilia Aguiar-Curry'],
+['Assemblyman Marc Berman'],
+['Assemblyman Rob Bonta'],
+['Assemblyman David Chiu'],
+['Assemblyman Mike Gipson'],
+['Assemblywoman Lorena Gonzalez'],
+['Assemblyman Ash Kalra'],
+['Assemblyman Jose Medina'],
+['Assemblyman Kevin Mullin'],
+['Assemblywoman Eloise Gomez Reyes'],
+['Assemblywoman Luz Rivas'],
+['Assemblyman Robert Rivas'],
+['Assemblyman Freddie Rodriguez'],
+['Assemblyman Miguel Santiago'],
+['Assemblyman Mark Stone'],
+['Assemblywoman Buffy Wicks'],
+['Former State Senate President Pro Tem Kevin de Leon'],
+['Alameda County Supervisor Keith Carson'],
+['Alameda County Supervisor Nate Miley'],
+['Contra Costa County Supervisor John Gioia'],
+['San Francisco County Assessor Carmen Chu'],
+['San Francisco County Board of Supervisors President Norman Yee'],
+['San Francisco County Supervisor Sandra Lee Fewer'],
+['San Francisco County Supervisor Matt Haney'],
+['San Francisco County Supervisor Rafael Mandelman'],
+['San Francisco County Supervisor Gordon Mar'],
+['San Francisco County Supervisor Aaron Peskin'],
+['San Francisco County Supervisor Dean Preston'],
+['San Francisco County Supervisor Hillary Ronen'],
+['San Francisco County Supervisor Ahsha Safai'],
+['San Francisco County Supervisor Shamann Walton'],
+['San Mateo County Supervisor David Canepa'],
+['Solano County Supervisor Erin Hannigan'],
+['Sonoma County Supervisor James Gore'],
+['Yolo County Supervisor Jim Provenza'],
+['American Canyon Mayor Leon Garcia'],
+['Daly City Mayor Glenn Sylvester'],
+['Dublin Mayor David Haubert'],
+['Lemon Grove Mayor Racquel Vasquez'],
+['Oakland Mayor Libby Schaaf'],
+['Petaluma Mayor Teresa Barrett'],
+['Santa Cruz Mayor Justin Cummings'],
+['South San Francisco Mayor Rich Garbarino'],
+['Stockton Mayor Michael Tubbs'],
+['Alameda City Councilmember Malia Vella'],
+['American Canyon City Councilmember Mark Joseph'],
+['Antioch City Councilmember Monica E. Wilson'],
+['Belmont Vice-Mayor Charles Stone'],
+['Berkeley City Councilmember Cheryl Davila'],
+['Carlsbad City Councilmember Priya Bhat-Patel'],
+['Chula Vista City Councilmember Steve Padilla'],
+['Concord Vice Mayory Dominic Aliano'],
+['Concord Councilmember Edi Birsan'],
+['Daly City Vice Mayor Juslyn Manalo'],
+['Daly City Councilmember Ray Buenaventura'],
+['East Palo Alto City Councilmember Lisa Gauthier'],
+['East Palo Alto City Councilmember Larry Moody'],
+['Emeryville City Councilmember John Bauters'],
+['Escondido City Councilmember Olga Diaz'],
+['Escondido City Deputy Mayor Consuelo Martinez'],
+['Fairfield City Vice Mayor Pam Bertani'],
+['Fairfield City Council Richard Vaccaro'],
+['Imperial Beach City Councilmember Paloma Aguirre'],
+['Imperial Beach City Councilmember Mark West'],
+['La Mesa City Councilmember Colin Parent'],
+['Lemon Grove City Councilmember David Arambula'],
+['Los Angeles City Councilmember Curren Price'],
+['Milbrae City Councilmember Gina Papan'],
+['Oakland City Councilmember Rebecca Kaplan'],
+['Oakland City Councilmember Sheng Thao'],
+['Richmond City Councilmember Ben Choi'],
+['Richmond City Councilmember Eduardo Martinez'],
+['Richmond City Councilmember Melvin Willis'],
+['Former Richmond City Councilmember Jovanka Beckles'],
+['Sacramento City Councilmember-Elect Katie Valenzuela'],
+['San Carlos Vice Mayor Laura Parmer-Lohan'],
+['San Carlos City Councilmember Mark Olbert'],
+['San Diego City Council President Georgette Gomez'],
+['San Diego City Councilmember Chris Ward'],
+['San Mateo City Councilmember Rick Bonilla'],
+['San Pablo City Councilmember Abel Pineda'],
+['Santa Rosa Vice Mayor Victoria Fleming'],
+['Santa Rosa City Councilmember Jack Tibbetts'],
+['South San Francisco Councilmember Mark Nagales'],
+['Suisun City Mayor Pro Tem Wanda Williams'],
+['Tracy City Councilmember Rhodesia Ransom'],
+['Vacaville City Councilmember Raymond Beatty'],
+['Vacaville City Councilmember Nolan Sullivan'],
+['Vallejo City Councilmember Rozzana Verder-Aliga'],
+['Former Vallejo City Councilmember Jesus Malgapo'],
+['Waterford City Councilmember Elizabeth Talbott'],
+['West Sacramento City Councilmember Martha Guerrero'],
+['Woodland City Councilmember Angel Barajas'],
+['Contra Costa Community College District Trustee Greg Enholm'],
+['Santa Barbara City College Board Trustee Jonathan Abboud'],
+['Santa Monica College Board Trustee Dr. Sion Roy'],
+['Governing Board Member Leticia Cazares'],
+['Southwestern Community College District Governing Board Member Roberto Alcantar'],
+['Southwestern Community College District Governing Board President Nora Vargas'],
+['Brea Olinda Unified School District Board Member Keri Kropke'],
+['Martinez Unified School Board President Jonathan T. Wright'],
+['Ocean View School District Board President Gina Clayton-Tarvin'],
+['Patterson Joint Unified School District Board Vice President Ryan Segoviano'],
+['Sacramento County Board of Education Vice President Karina Talamantes'],
+['San Diego Unified School District Board Member Richard Barrera'],
+['Stockton Unified School District Board Trustee Candelaria Vargas'],
+['Tracy Unified School District Board Member Simran Kaur'],
+['Vallejo City Unified School District Trustee Dr. Tony Ubalde, Jr.'],
+['Former Vallejo City Unified School District Trustee Ruscal Cayangyang'],
+['Vista Unified School District Trustee Cipriano Vargas'],
+['Vista Unified School District Trustee Martha Alvarado'],
+['West County Wastewater Board Director Harry Wiener'],
+['West County Wastewater Board Director Cesar Zepeda'],
+['East Bay Regional Park District Board Member Elizabeth Echols'],
+['Democratic National Committee Member Sandra Lowe'],
+['Democratic National Committee Member-Elect Ada Briceño'],
+['Lake County Democratic Central Committee Chair Deb Baumann'],
+['San Francisco County Democratic Party Chair David Campos'],
+['California Democratic Party Progressive Caucus Chair Amar Shergill'],
+['California Democratic Party Executive Board Member Tristan Brown'],
+['California Democratic Party Executive Board Member Andrae Macapinlac'],
+['California Democratic Party Executive Board Member Robert M. Nelson'],
+['California Democratic Party Executive Board Member Eleanore Rewerts'],
+['San Francisco Transit Riders Board Co-Chair Thea Selby'],
+
+          ]
+        );
+
+        var options = {
+          wordtree: {
+            format: 'implicit',
+            type: 'double',
+            word: 'Councilmember',
+          }, fontName: 'Calibri',
+	  colors: ['#89043D'],
+	  backgroundColor: '#F7B1AB'	
+        };
+
+        var options2 = {
+          wordtree: {
+            format: 'implicit',
+            type: 'double',
+            word: 'Board',
+          }, fontName: 'Calibri',
+	  colors: ['#89043D'],
+	  backgroundColor: '#F7B1AB'
+        };
+
+        var options3 = {
+          wordtree: {
+            format: 'implicit',
+            type: 'double',
+            word: 'Democratic',
+          }, fontName: 'Calibri',
+	  colors: ['#89043D'],
+	  backgroundColor: '#F7B1AB'
+        };
+
+        var options4 = {
+          wordtree: {
+            format: 'implicit',
+            type: 'double',
+            word: 'Supervisor',
+          }, fontName: 'Calibri',
+	  colors: ['89043D'],
+	  backgroundColor: '#F7B1AB'
+        };
+
+        var options5 = {
+          wordtree: {
+            format: 'implicit',
+            type: 'double',
+            word: 'Mayor',
+          }, fontName: 'Calibri',
+	  colors: ['#89043D'],
+	  backgroundColor: '#F7B1AB'
+        };
+
+        var chart = new google.visualization.WordTree(document.getElementById('wordtree1'));
+        chart.draw(data, options);
+	var chart2 = new google.visualization.WordTree(document.getElementById('wordtree2'));
+        chart2.draw(data, options2);
+	var chart3 = new google.visualization.WordTree(document.getElementById('wordtree3'));
+        chart3.draw(data, options3);
+	var chart4 = new google.visualization.WordTree(document.getElementById('wordtree4'));
+        chart4.draw(data, options4);
+	var chart5 = new google.visualization.WordTree(document.getElementById('wordtree5'));
+        chart5.draw(data, options5);
+      }
+    </script>
+  </head>
+  <body>
+	<div class="noflex-container">
+        <h3>Explore the 212 groups that form the No Coalition</h3>
+	</div>
+	<div class="noflex-container">
+	<h7>Start with these 5 most frequently occurring terms: </h7><br/><br/>
+	</div>
+	<div class="flex-container">
+        <button class="button no"><a href="#wordtree1">Councilmember</a></button>
+        <button class="button no"><a href="#wordtree2">Board</a></button>
+        <button class="button no"><a href="#wordtree3">Democratic</a></button>
+        <button class="button no"><a href="#wordtree4">Supervisor</a></button>
+        <button class="button no"><a href="#wordtree5">Mayor</a></button>
+	</div>
+
+	<div class="flex-container">
+	<button class="button no"><a href="index.html#no-panel">Go Back</a></button>
+	</div>
+
+	<div class="noflex-container">
+	<div id="wordtree1" style="width: 900px; height: 500px;"></div>
+	</div>
+	<div class="noflex-container">
+	<div id="wordtree2" style="width: 900px; height: 500px;"></div>
+	</div>
+	<div class="noflex-container">
+	<div id="wordtree3" style="width: 900px; height: 500px;"></div>
+	</div>
+	<div class="noflex-container">
+	<div id="wordtree4" style="width: 900px; height: 500px;"></div>
+	</div>
+	<div class="noflex-container">
+	<div id="wordtree5" style="width: 900px; height: 500px;"></div>
+	</div>
+  </body>
+</html>
