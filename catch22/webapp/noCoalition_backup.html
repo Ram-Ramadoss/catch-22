@@ -4,29 +4,6 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gugi">
 	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-  </head>
-  <body>
-	<div class="noflex-container">
-        <h3>Explore the 212 groups that form the No Coalition</h3>
-	</div>
-	<div class="noflex-container">
-	<h7>Start with these 5 most frequently occurring terms:</h7>
-	</div>
-	<div class="noflex-container">
-	Councilmember, Board, Democratic, Supervisor, or Mayor
-	</div>
-	<div class="noflex-container">
-	<input value="Councilmember" id="root"><input type="button" value="go" id="go"><br/><br/>
-	</div>
-
-	<div class="noflex-container">
-	<button class="button no"><a href="index.html#yes-panel">back</a></button>
-	</div>
-
-	<div class="noflex-container">
-	<div id="wordtree1" style="width: 900px; height: 500px;"></div>
-	</div>
-
 	<script type="text/javascript">
 		google.charts.load('current', {packages:['wordtree']});
 		google.charts.setOnLoadCallback(drawChart);
@@ -249,24 +226,103 @@
 
           ]
         );
-	
-	var chart = new google.visualization.WordTree(document.getElementById('wordtree1'));
-
-	var root = document.getElementById('root').value || '';
 
         var options = {
           wordtree: {
             format: 'implicit',
             type: 'double',
-            word: root,
+            word: 'Councilmember',
           }, fontName: 'Calibri',
 	  colors: ['#89043D'],
 	  backgroundColor: '#F7B1AB'	
         };
 
+        var options2 = {
+          wordtree: {
+            format: 'implicit',
+            type: 'double',
+            word: 'Board',
+          }, fontName: 'Calibri',
+	  colors: ['#89043D'],
+	  backgroundColor: '#F7B1AB'
+        };
+
+        var options3 = {
+          wordtree: {
+            format: 'implicit',
+            type: 'double',
+            word: 'Democratic',
+          }, fontName: 'Calibri',
+	  colors: ['#89043D'],
+	  backgroundColor: '#F7B1AB'
+        };
+
+        var options4 = {
+          wordtree: {
+            format: 'implicit',
+            type: 'double',
+            word: 'Supervisor',
+          }, fontName: 'Calibri',
+	  colors: ['89043D'],
+	  backgroundColor: '#F7B1AB'
+        };
+
+        var options5 = {
+          wordtree: {
+            format: 'implicit',
+            type: 'double',
+            word: 'Mayor',
+          }, fontName: 'Calibri',
+	  colors: ['#89043D'],
+	  backgroundColor: '#F7B1AB'
+        };
+
+        var chart = new google.visualization.WordTree(document.getElementById('wordtree1'));
         chart.draw(data, options);
+	var chart2 = new google.visualization.WordTree(document.getElementById('wordtree2'));
+        chart2.draw(data, options2);
+	var chart3 = new google.visualization.WordTree(document.getElementById('wordtree3'));
+        chart3.draw(data, options3);
+	var chart4 = new google.visualization.WordTree(document.getElementById('wordtree4'));
+        chart4.draw(data, options4);
+	var chart5 = new google.visualization.WordTree(document.getElementById('wordtree5'));
+        chart5.draw(data, options5);
       }
-      document.getElementById('go').onclick = drawChart;
     </script>
+  </head>
+  <body>
+	<div class="noflex-container">
+        <h3>Explore the 212 groups that form the No Coalition</h3>
+	</div>
+	<div class="noflex-container">
+	<h7>Start with these 5 most frequently occurring terms: </h7><br/><br/>
+	</div>
+	<div class="flex-container">
+        <button class="button no"><a href="#wordtree1">Councilmember</a></button>
+        <button class="button no"><a href="#wordtree2">Board</a></button>
+        <button class="button no"><a href="#wordtree3">Democratic</a></button>
+        <button class="button no"><a href="#wordtree4">Supervisor</a></button>
+        <button class="button no"><a href="#wordtree5">Mayor</a></button>
+	</div>
+
+	<div class="flex-container">
+	<button class="button no"><a href="index.html#no-panel">Go Back</a></button>
+	</div>
+
+	<div class="noflex-container">
+	<div id="wordtree1" style="width: 900px; height: 500px;"></div>
+	</div>
+	<div class="noflex-container">
+	<div id="wordtree2" style="width: 900px; height: 500px;"></div>
+	</div>
+	<div class="noflex-container">
+	<div id="wordtree3" style="width: 900px; height: 500px;"></div>
+	</div>
+	<div class="noflex-container">
+	<div id="wordtree4" style="width: 900px; height: 500px;"></div>
+	</div>
+	<div class="noflex-container">
+	<div id="wordtree5" style="width: 900px; height: 500px;"></div>
+	</div>
   </body>
 </html>
