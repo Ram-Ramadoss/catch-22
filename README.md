@@ -10,7 +10,7 @@ We thought this topic, who supports and funds each side, was an important questi
 ## Data Visualization Tool
 
 
-[![logo](/logo.png)](https://tramadoss.github.io/catch-22/catch22/webapp/index.html)
+[![logo](https://raw.githubusercontent.com/tramadoss/catch-22/master/catch22/webapp/assets/logo.png)](https://tramadoss.github.io/catch-22/catch22/webapp/index.html)
 
 ## Definitions and Data Sources
 Coalition: List of all groups and people who either support or oppose Prop 22 but do not necessarily contribute money to supporting/opposing Prop 22
