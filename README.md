@@ -13,10 +13,9 @@ We thought this topic, who supports and funds each side, was an important questi
 [![logo](https://raw.githubusercontent.com/tramadoss/catch-22/master/catch22/webapp/assets/logo.png)](https://tramadoss.github.io/catch-22/catch22/webapp/index.html)
 
 ## Definitions and Data Sources
-Coalition: List of all groups and people who either support or oppose Prop 22 but do not necessarily contribute money to supporting/opposing Prop 22
+Endorsers/Coalition: List of all groups and people who either support or oppose Prop 22 but do not necessarily contribute money to supporting/opposing Prop 22.
 <br/>Committee: Official groups formed to support or oppose ballot measures, financial contributions received and spent by these groups are publicly available data.
 <br/>Contributors: List of all groups and people who financially support the coalitions to support or oppose Prop 22
-
 
 Contributor data was collected from: http://cal-access.sos.ca.gov/Campaign/Measures/
 <br/>Coalition lists were gathered from each coalition's website:
@@ -26,6 +25,8 @@ Contributor data was collected from: http://cal-access.sos.ca.gov/Campaign/Measu
 ## Data Collection Process
 
 ### Contributor Data
+Data was collected through web-scraping with the Python/Juptyter notebook: data/data-collector.ipynb
+
 Only contributor data from the highest collecting committees for each side was considered in this project. From the Cal-Access webpage (http://cal-access.sos.ca.gov/Campaign/Measures/Detail.aspx?id=1423938&session=2019), it was determined that the main committees were:
 <br/>Yes: Committee ID 1422181 (SUPPORT)
 <br/>No:  Committee ID 1424537 (OPPOSE)
@@ -37,7 +38,7 @@ Excel files from the "Contributions Received" and "Late and $5000+ Contributions
 <br/>data/1424537_OPPOSE/late_5000_contributions_received.xls
 
 ### Coalition Data
-Coalition lists were manually copied from each coalition's webpage into text files and stored as follows:
+Coalition lists were scraped from each coalition's webpage into text files and stored as follows:
 <br/>data/coalition-lists/YesOnProp22.txt
 <br/>data/coalition-lists/NoOnProp22.txt
 
@@ -48,11 +49,25 @@ Data was collected on these days:
 <br/>Coalition lists on 9/22
 
 ## Data Processing
-iPython & Jupyter Notebook was used to process the data. 
+Python/Jupyter Notebook was used to process the data. 
 <br/>Contributor data was parsed from two files for each committee, the contributions received and late contriutions received files and organized:
 <br/> 1. By Contributor: The aggregate contributions made by each contributor is summarized
 <br/> 2. By Date: The total contributions made per day is summarized
 <br/>Coalition lists were parsed by term and every term and its frequency was calculated (discounting conjunctions, locations, and general terms for group that appear in both coalitions).
+
+Here's a list of all the data collected:
+1. Total contributions received
+2. Total contributors 
+3. Total endorsers
+4. Contributions grouped by contributor 
+1. For “No” the additional step was taken to divide contributors into 3 groups: 
+1. If the word “teamster” found -> “Teamster”
+2. Else if the words (“union,” “labor ”,“work”) found -> “Other Union/Labor/Workers” 
+3. Else “Other”
+5.Contributions grouped by date
+6.Most frequent terms in the coalition member lists
+2. Extra fun: users can explore how these terms appear in coalition member names
+
 
 All generated tables are saved as CSV files by the Notebook here. The guide.csv file stores key facts for each coalition and indexes the file name for each data category.
 <br/>data/processed-data
@@ -70,4 +85,6 @@ Launch the Jupyter Notebook here to view the detailed data processing steps:
 ## Contributors
 
 Trisha Ramadoss, UC Davis Transportation Technology & Policy PhD student, BSE Electical Engineerng & Physics 
+- Data collection, data processing, planning, graphic design
 <br/>Nitin Ramadoss, University of Florida, Candidate for BS in Computer Science
+- Web backend development & git version control
