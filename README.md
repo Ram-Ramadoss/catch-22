@@ -59,10 +59,7 @@ Here's a list of all the data collected:
 1. Total contributions received
 2. Total contributors 
 3. Total endorsers
-4. Contributions grouped by contributor  <br/> For “No” the additional step was taken to divide contributors into 3 groups: 
-    - If the word “teamster” found -> “Teamster”
-    - Else if the words (“union,” “labor ”,“work”) found -> “Other Union/Labor/Workers” 
-    - Else “Other”
+4. Contributions grouped by contributor  <br/> For “No” the additional step was taken to divide contributors into 3 groups:  <br/>If the word “teamster” found -> “Teamster” <br/>Else if the words (“union,” “labor ”,“work”) found -> “Other Union/Labor/Workers”  <br/> Else “Other”
 5.Contributions grouped by date
 6.Most frequent terms in the coalition member lists <br/> Extra fun: users can explore how these terms appear in coalition member names
 
