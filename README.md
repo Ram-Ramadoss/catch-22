@@ -63,8 +63,8 @@ Here's a list of all the data collected:
     1. If the word “teamster” found -> “Teamster” 
     2. Else if the words (“union,” “labor ”,“work”) found -> “Other Union/Labor/Workers”  
     3. Else “Other”
-5.Contributions grouped by date
-6.Most frequent terms in the coalition member lists 
+5. Contributions grouped by date
+6. Most frequent terms in the coalition member lists 
     1. Extra fun: users can explore how these terms appear in coalition member names
 
 
