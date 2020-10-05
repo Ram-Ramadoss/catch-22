@@ -50,22 +50,19 @@ Data was collected on these days:
 
 ## Data Processing
 Python/Jupyter Notebook was used to process the data. 
-<br/>Contributor data was parsed from two files for each committee, the contributions received and late contriutions received files and organized:
-<br/> 1. By Contributor: The aggregate contributions made by each contributor is summarized
-<br/> 2. By Date: The total contributions made per day is summarized
-<br/>Coalition lists were parsed by term and every term and its frequency was calculated (discounting conjunctions, locations, and general terms for group that appear in both coalitions).
-
-Here's a list of all the data collected:
+<br/>Contributor data was parsed from two files for each committee, the contributions received and late contriutions received files and combined. These parameters were extracted:
 1. Total contributions received
 2. Total contributors 
-3. Total endorsers
-4. Contributions grouped by contributor. 
+3. Contributions grouped by contributor. 
     1. For “No” the additional step was taken to divide contributors into 3 groups:
         1. If the word “teamster” found -> “Teamster” 
         2. Else if the words (“union,” “labor ”,“work”) found -> “Other Union/Labor/Workers”  
         3. Else “Other”
-5. Contributions grouped by date
-6. Most frequent terms in the coalition member lists 
+4. Contributions grouped by date
+
+Coalition lists (from each website) were parsed by term and every term and its frequency was calculated (discounting conjunctions, locations, and general terms for group that appear in both coalitions). These parameters were extracted:
+1. Total endorsers
+2. Most frequent terms in the coalition member lists 
     1. Extra fun: users can explore how these terms appear in coalition member names
 
 
