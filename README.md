@@ -50,7 +50,8 @@ Data was collected on these days:
 
 ## Data Processing
 Python/Jupyter Notebook was used to process the data. 
-<br/>Contributor data was parsed from two files for each committee, the contributions received and late contriutions received files and combined. These parameters were extracted:
+
+Contributor data was parsed from two files for each committee, the contributions received and late contriutions received files and combined. These parameters were extracted:
 1. Total contributions received
 2. Total contributors 
 3. Contributions grouped by contributor. 
