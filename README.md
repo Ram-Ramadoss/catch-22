@@ -19,7 +19,7 @@ Endorsers/Coalition: List of all groups and people who either support or oppose 
 
 Contributor data was collected from: http://cal-access.sos.ca.gov/Campaign/Measures/
 <br/>Coalition lists were gathered from each coalition's website:
-<br/>Yes Coalition: https://yeson22.com/coalition/ Download Link> https://yeson22.com/wp-content/uploads/2020/09/Yes-Prop-22-Coalition-List-DESIGNED-_Updated-9.16-1.pdf
+<br/>Yes Coalition: https://yeson22.com/coalition/ 
 <br/>No Coalition: https://nooncaprop22.com/our_coalition
 
 ## Data Collection Process
