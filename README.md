@@ -48,7 +48,7 @@ Data was collected on these days:
 <br/>Late contributions received files refreshed on 9/26/2020
 <br/>Coalition lists on 9/22
 
-*** Date collected is important because both coalitions are continuing to receive contributions, ss this tool represents the status as of late Sept
+*** Date collected is important because both coalitions are continuing to receive contributions, so this tool represents the status as of late Sept
 
 ## Data Processing
 Python/Jupyter Notebook was used to process the data. 
